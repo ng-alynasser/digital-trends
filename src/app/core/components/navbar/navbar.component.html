@@ -1,3 +1,14 @@
-<ul>
-  <li (click)="toggleLanguage()">{{ displayedLang }}</li>
-</ul>
+<header class="nav">
+  <nav class="nav__wrapper" fxLayout fxLayoutAlign="space-between center">
+    <a class="nav__brand" fxLayout fxLayoutAlign="center center">
+      <img src="assets/images/dt-brand.png" alt="Digital Trends">
+    </a>
+    <ul class="nav__items" fxLayout fxLayoutAlign="space-between center" fxFlex="60">
+      <li><a routerLink="/home" routerLinkActive="nav__active" translate="HOME-NAVBAR_HOME"></a></li>
+      <li><a routerLink="/our-work" routerLinkActive="nav__active" translate="HOME-NAVBAR_OUR_WORK"></a></li>
+      <li><a routerLink="/blog" routerLinkActive="nav__active" translate="HOME-NAVBAR_BLOG"></a></li>
+      <li><a routerLink="/contact-us" routerLinkActive="nav__active" translate="HOME-NAVBAR_CONTACT_US"></a></li>
+      <li class="nav__language"><a (click)="toggleLanguage()">{{ displayedLang }}</a></li>
+    </ul>
+  </nav>
+</header>

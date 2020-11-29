@@ -1,0 +1,51 @@
+@import "./src/styles.scss";
+
+.nav {
+  &__wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+
+  &__brand {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__items {
+    list-style-type: none;
+
+    li {
+      font-weight: 600;
+      font-size: 1.6em;
+      letter-spacing: 1px;
+
+      &:hover:not(:last-of-type) {
+        border-bottom: 7px solid $secondary-color;
+        line-height: 0.25;
+        display: inline-block;
+
+        transition: all 0.1s ease-in-out;
+      }
+    }
+  }
+
+  &__language {
+    color: $secondary-color;
+    font-size: 1.4em !important;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid $main-color;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
+  &__active:not(:hover) {
+    border-bottom: 7px solid $secondary-color;
+    line-height: 0.25;
+    display: inline-block;
+  }
+}
