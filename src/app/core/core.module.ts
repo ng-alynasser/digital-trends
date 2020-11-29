@@ -22,6 +22,14 @@ export function windowFactory(platformId: object): Window | undefined {
   return undefined;
 }
 
+export function documentFactory(platformId: object): Document | undefined {
+  if (isPlatformBrowser(platformId)) {
+    return document;
+  }
+
+  return undefined;
+}
+
 @NgModule({
   declarations: [NavbarComponent, FooterComponent],
   exports: [NavbarComponent, FooterComponent],
@@ -32,12 +40,15 @@ export function windowFactory(platformId: object): Window | undefined {
     FontAwesomeModule,
     HttpClientModule,
     TranslateModule.forRoot(),
-    FlexLayoutModule,
+    FlexLayoutModule.withConfig({
+      ssrObserveBreakpoints: ['xs', 'lt-md'],
+    }),
   ],
   providers: [
     {
       provide: DT_DOCUMENT,
-      useValue: Document,
+      useFactory: documentFactory,
+      deps: [PLATFORM_ID],
     },
     {
       provide: DT_WINDOW,

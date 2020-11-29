@@ -1,6 +1,6 @@
 import { Inject, Injectable, Optional, PLATFORM_ID } from '@angular/core';
 import { Observable, ReplaySubject } from 'rxjs';
-import { DT_DIRECTION, DTLayoutDirection } from '../constants';
+import { DT_DIRECTION, DTLayoutDirection, DT_DOCUMENT } from '../constants';
 import { share } from 'rxjs/operators';
 import { isPlatformBrowser, DOCUMENT } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
@@ -12,8 +12,8 @@ export class DirectionService {
 
   constructor(
     @Optional() @Inject(DT_DIRECTION) private direction: DTLayoutDirection,
+    @Inject(DT_DOCUMENT) private readonly document: Document,
     @Inject(PLATFORM_ID) private readonly platformId: object,
-    @Inject(DOCUMENT) private readonly document: Document,
     private readonly translateService: TranslateService
   ) {
     if (isPlatformBrowser(this.platformId)) {
@@ -40,10 +40,12 @@ export class DirectionService {
         localStorage.setItem('DTuiLanguage', Languages.AR);
         this.translateService.use(Languages.AR);
         htmlElement.setAttribute('dir', DTLayoutDirection.RTL);
+        htmlElement.setAttribute('lang', 'ar');
       } else {
         localStorage.setItem('DTuiLanguage', Languages.EN);
         this.translateService.use(Languages.EN);
         htmlElement.setAttribute('dir', DTLayoutDirection.LTR);
+        htmlElement.setAttribute('lang', 'en');
       }
     }
 
