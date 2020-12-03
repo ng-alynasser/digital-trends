@@ -47,9 +47,4 @@ export class NavbarMobileComponent {
   close(): void {
     this.stateService.setState('mobileNavMenuIsOpen', false);
   }
-
-  routeTo(route: string): void {
-    this.router.navigate([route]);
-    this.close();
-  }
 }
