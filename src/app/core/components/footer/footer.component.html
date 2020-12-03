@@ -1,5 +1,44 @@
-<footer>
-  <div class="footer-wrapper">
+<footer class="footer">
+  <div class="footer__wrapper" fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center center">
+    <section class="footer__logo">
+      <img src="assets/images/dt-logo.png" alt="">
+    </section>
 
+    <section class="footer__contact" fxFlex="45">
+      <p>
+        <fa-icon [icon]="faEmail"></fa-icon>
+        <a href="mailto:hello@digitaltrends.co">hello@digitaltrends.co</a>
+        <fa-icon [icon]="faWhatsapp"></fa-icon>
+        <a href="">+(966) 50 670 0045</a>
+      </p>
+      <p class="footer__contact__address">
+        <fa-icon [icon]="faMap"></fa-icon>
+        <span translate="HOME-FOOTER_ADDRESS"></span>
+      </p>
+    </section>
+
+    <section class="footer__form" fxFlex="35">
+      <h3 translate="HOME-FOOTER_FORM_TITLE"></h3>
+      <form fxLayout="column">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+          <input fxFlex="48" type="text" [placeholder]="'HOME-FOOTER_FORM_NAME' | translate">
+          <input fxFlex="48" type="number" [placeholder]="'HOME-FOOTER_FORM_MOBILE' | translate">
+        </div>
+        <input type="email" [placeholder]="'HOME-FOOTER_FORM_EMAIL' | translate">
+        <textarea cols="30" rows="5" [placeholder]="'HOME-FOOTER_FORM_MESSAGE' | translate"></textarea>
+        <button type="submit" fxFlexAlign="flex-end" translate="HOME-FOOTER_SEND"></button>
+      </form>
+    </section>
+
+
+
+
+  </div>
+  <hr>
+  <div class="footer__social">
+    <fa-icon [icon]="faLinkedIn" class="linkedIn"></fa-icon>
+    <fa-icon [icon]="faGoogle" class="google"></fa-icon>
+    <fa-icon [icon]="faTwitter" class="twitter"></fa-icon>
+    <fa-icon [icon]="faFacebook" class="facebook"></fa-icon>
   </div>
 </footer>

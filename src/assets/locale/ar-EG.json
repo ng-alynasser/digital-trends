@@ -3,5 +3,12 @@
 	"HOME-NAVBAR_OUR_WORK": "أعمالنا",
 	"HOME-NAVBAR_BLOG": "المدونة",
   "HOME-NAVBAR_CONTACT_US": "تواصل معنا",
-  "HOME-NAVBAR_LANGUAGE": "English"
+  "HOME-NAVBAR_LANGUAGE": "English",
+  "HOME-FOOTER_FORM_NAME": "الاسم بالكامل",
+	"HOME-FOOTER_FORM_MOBILE": "رقم الجوال",
+	"HOME-FOOTER_FORM_EMAIL": "البريد الإلكترونى",
+	"HOME-FOOTER_FORM_MESSAGE": "الرسالة",
+	"HOME-FOOTER_SEND": "إرسال",
+  "HOME-FOOTER_ADDRESS": "طريق الملك عبدالله الفرعى - الورود - الرياض - المملكة العربية السعودية",
+  "HOME-FOOTER_FORM_TITLE": "تواصل معنا"
 }

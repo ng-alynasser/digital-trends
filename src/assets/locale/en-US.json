@@ -3,5 +3,12 @@
 	"HOME-NAVBAR_OUR_WORK": "Our Work",
 	"HOME-NAVBAR_BLOG": "Blog",
   "HOME-NAVBAR_CONTACT_US": "Contact Us",
-  "HOME-NAVBAR_LANGUAGE": "عربى"
+  "HOME-NAVBAR_LANGUAGE": "عربى",
+  "HOME-FOOTER_FORM_NAME": "Full Name",
+	"HOME-FOOTER_FORM_MOBILE": "Mobile Number",
+	"HOME-FOOTER_FORM_EMAIL": "Email",
+	"HOME-FOOTER_FORM_MESSAGE": "Message",
+	"HOME-FOOTER_SEND": "Send",
+  "HOME-FOOTER_ADDRESS": "King Abdullah Second St - Al Worod - Riyadh - KSA",
+  "HOME-FOOTER_FORM_TITLE": "Contact Us"
 }
