@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   transform: translateX(-102vw) translateX(0);
   transition: transform 0.8s;
@@ -26,8 +26,9 @@
 }
 
 nav {
-  height: 100vh;
+  height: 100%;
   padding-bottom: 2em;
+  overflow: hidden;
   img {
     height: 100%;
     width: 100%;
