@@ -1,10 +1,10 @@
-@import "./src/styles.scss";
+@import './src/styles.scss';
 
 .nav {
   &__wrapper {
     max-width: 1024px;
     margin: 0 auto;
-    padding-top: 2em;
+    padding: 2em 2em 0;
   }
 
   &__brand {
@@ -47,5 +47,10 @@
     border-bottom: 7px solid $secondary-color;
     line-height: 0.25;
     display: inline-block;
+  }
+
+  fa-icon {
+    font-size: 3em;
+    color: $secondary-color;
   }
 }

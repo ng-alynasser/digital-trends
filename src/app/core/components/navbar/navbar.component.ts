@@ -1,28 +1,30 @@
-import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { DTLayoutDirection, DT_DOCUMENT, DT_WINDOW } from '../../constants';
+import { Component } from '@angular/core';
+import { DTLayoutDirection } from '../../constants';
 import { DirectionService } from '../../services/direction.service';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+import { StateService } from '../../services/state.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent implements OnInit {
-  displayedLang: string;
+export class NavbarComponent {
+  faBars = faBars;
 
-  constructor(private readonly directionService: DirectionService) {}
-
-  ngOnInit(): void {
-    this.directionService.onDirectionChange().subscribe((direction) => {
-      direction === DTLayoutDirection.RTL
-        ? (this.displayedLang = 'English')
-        : (this.displayedLang = 'عربى');
-    });
-  }
+  constructor(
+    private readonly directionService: DirectionService,
+    private readonly stateService: StateService
+  ) {}
 
   toggleLanguage(): void {
-    this.displayedLang === 'English'
+    this.directionService.isRtl()
       ? this.directionService.setDirection(DTLayoutDirection.LTR)
       : this.directionService.setDirection(DTLayoutDirection.RTL);
+  }
+
+  toggleSidebarMobile(): void {
+    this.stateService.setState('mobileNavMenuIsOpen', true);
   }
 }

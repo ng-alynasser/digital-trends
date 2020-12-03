@@ -1,0 +1,74 @@
+@import './src/styles.scss';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translateX(-102vw) translateX(0);
+  transition: transform 0.8s;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 3;
+
+  &.visible {
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+
+nav {
+  height: 100%;
+  padding-bottom: 2em;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  div {
+    width: 35%;
+  }
+
+  .nav__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      font-weight: 600;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+  }
+
+  .nav__language {
+    color: $secondary-color;
+    font-size: 1.4em !important;
+  }
+
+  .nav__active {
+    border-bottom: 7px solid $secondary-color;
+    line-height: 0.25;
+    display: inline-block;
+  }
+
+  fa-icon {
+    font-size: 2em;
+    padding: 1.2em;
+  }
+
+  hr {
+    background-color: $secondary-color;
+    padding-bottom: 2px;
+    border: 0;
+    margin-bottom: 1em;
+  }
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslationLoaderService } from './core/services/translation-loader.service';
+import { StateService } from './core/services/state.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +9,17 @@ import { TranslationLoaderService } from './core/services/translation-loader.ser
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  constructor(private translationLoaderService: TranslationLoaderService) {}
+  navMenuVisible$: Observable<boolean>;
+
+  constructor(
+    private translationLoaderService: TranslationLoaderService,
+    private readonly stateService: StateService
+  ) {}
 
   ngOnInit(): void {
     this.translationLoaderService.loadTranslation();
+    this.navMenuVisible$ = this.stateService.select(
+      (state) => state.mobileNavMenuIsOpen
+    );
   }
 }

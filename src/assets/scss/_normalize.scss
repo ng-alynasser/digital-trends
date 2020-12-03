@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap');
 
 $main-color: #000000;
 $light-main-color: rgba($main-color, 0.5);
@@ -6,7 +6,7 @@ $secondary-color: #f8d12c;
 
 body {
   font-size: 10px;
-  font-family: "Tajwal", sans-serif;
+  font-family: 'Tajwal', sans-serif;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -43,4 +43,41 @@ img {
   height: 100%;
   position: relative;
   transition-property: transform;
+}
+
+.panel {
+  color: #fff;
+  height: 100vh;
+  width: 50%;
+  min-width: 320px;
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495057;
+}
+
+.sidebar-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-panel {
+  position: relative;
+  z-index: 1001;
+}
+
+.cdk-overlay-backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: auto;
+  transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 0.1;
 }
