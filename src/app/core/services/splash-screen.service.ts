@@ -48,7 +48,7 @@ export class SplashScreenService {
       .build([
         style({ opacity: '1' }),
         animate(
-          '400ms ease',
+          '2000ms ease',
           style({
             opacity: '0',
             zIndex: '-10',
