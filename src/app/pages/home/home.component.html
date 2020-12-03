@@ -1,11 +1,15 @@
 <main class="home">
   <div class="home__wrapper">
-    <div class="home__header" fxLayout fxLayoutAlign="center center">
+    <section class="home__header" fxLayout fxLayoutAlign="center center">
       <p fxFlex="45" fxFlex.lt-sm="100">
         <span [innerHTML]="'HOME-HEADER_FIRST_QUOT' | translate"></span>
         {{ 'HOME-HEADER_TEXT' | translate }}
         <span [innerHTML]="'HOME-HEADER_SECOND_QUOT' | translate"></span>
       </p>
-    </div>
+    </section>
+
+    <section class="home__check">
+      <h3></h3>
+    </section>
   </div>
 </main>
