@@ -2,11 +2,11 @@
 
 .home {
   &__wrapper {
-    max-width: 1024px;
-    margin: 0 auto;
   }
 
   &__header {
+    max-width: 1024px;
+    margin: 0 auto;
     background-image: url('../../../assets/images/rectangle.png'),
       url('../../../assets/images/ellipse.png');
     background-position: 70% 5%, 65% 85%;
@@ -20,6 +20,32 @@
     span {
       color: $secondary-color;
       font-size: 1.6em;
+    }
+  }
+
+  &__check {
+    background-image: url('../../../assets/images/rectangle-bg.png');
+    background-repeat: no-repeat;
+    background-size: cotnain;
+
+    &__wrapper {
+      max-width: 1024px;
+      margin: 0 auto;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      p {
+        font-size: 3em;
+        letter-spacing: 1px;
+        font-weight: 500;
+        span {
+          font-size: 1.2em;
+          font-weight: 650;
+        }
+      }
     }
   }
 }
