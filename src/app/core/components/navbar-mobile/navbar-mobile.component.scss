@@ -1,4 +1,4 @@
-@import './src/styles.scss';
+@import "./src/styles.scss";
 
 :host {
   display: flex;
@@ -68,12 +68,5 @@ nav {
 
   .closeIcon {
     padding: 1em;
-  }
-
-  hr {
-    background-color: $secondary-color;
-    padding-bottom: 2px;
-    border: 0;
-    margin-bottom: 1em;
   }
 }
