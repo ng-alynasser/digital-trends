@@ -3,20 +3,56 @@
     <section class="home__header" fxLayout fxLayoutAlign="center center">
       <p fxFlex="45" fxFlex.lt-sm="100">
         <span [innerHTML]="'HOME-HEADER_FIRST_QUOT' | translate"></span>
-        {{ 'HOME-HEADER_TEXT' | translate }}
+        {{ "HOME-HEADER_TEXT" | translate }}
         <span [innerHTML]="'HOME-HEADER_SECOND_QUOT' | translate"></span>
       </p>
     </section>
 
-    <section class="home__check" >
-      <div class="home__check__wrapper"
-           fxLayout
-           fxLayoutAlign="space-evenly center"
-           fxLayout.lt-sm="column"
-           fxLayoutAlign.lt-sm="center center">
-        <p><span>Check</span> Our Work</p>
-        <div fxFlex="30" fxLayout fxLayoutAlign="center center">
-          <img src="assets/images/cards-group.png" alt="Cards Group">
+    <section class="home__check">
+      <div
+        class="home__check__wrapper"
+        fxLayout
+        fxLayoutAlign="space-evenly center"
+        fxLayout.lt-sm="column"
+        fxLayoutAlign.lt-sm="center center"
+      >
+        <p>
+          <span translate="HOME-CHECK_CHECK"></span>
+          {{ "HOME-CHECK_OUR_WORK" | translate }}
+        </p>
+        <div fxFlex="30" fxLayout fxLayoutAlign="space-evenly center">
+          <img src="assets/images/cards.png" alt="Cards Group" />
+        </div>
+      </div>
+    </section>
+
+    <section class="home__consult">
+      <div
+        class="home__consult__wrapper"
+        fxLayout
+        fxLayoutAlign="space-between center"
+      >
+        <div
+          class="home__consult__image"
+          fxLayout
+          fxLayoutAlign="center center"
+          fxFlex="45"
+        >
+          <img src="assets/images/consult.png" alt="Consulting" />
+        </div>
+        <div
+          class="home__consult__text"
+          fxLayout="column"
+          fxLayoutAlign="space-between start"
+          fxFlex="50"
+        >
+          <h3 translate="HOME-CONSULT_TITLE"></h3>
+          <ul>
+            <li translate="HOME-CONSULT_ITEM_ONE"></li>
+            <li translate="HOME-CONSULT_ITEM_TWO"></li>
+            <li translate="HOME-CONSULT_ITEM_THREE"></li>
+          </ul>
+          <button translate="HOME-CONSULT_CONTACT_US"></button>
         </div>
       </div>
     </section>

@@ -2,5 +2,19 @@
   body {
     direction: rtl;
     text-align: right;
+
+    * {
+      letter-spacing: initial !important;
+    }
+
+    .home {
+      &__check {
+        &__wrapper {
+          p {
+            font-size: 4em !important;
+          }
+        }
+      }
+    }
   }
 }
