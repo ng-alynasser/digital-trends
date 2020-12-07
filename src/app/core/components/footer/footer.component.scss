@@ -1,4 +1,4 @@
-@import './src/styles.scss';
+@import "./src/styles.scss";
 
 .footer {
   background-color: rgba(black, 0.85);
@@ -7,6 +7,16 @@
     max-width: 1024px;
     margin: 0 auto;
     padding: 2em 1em;
+  }
+
+  &__logo {
+    @media screen and (max-width: 599px) {
+      text-align: center;
+      img {
+        height: 75%;
+        width: 75%;
+      }
+    }
   }
 
   @media screen and (max-width: 599px) {
@@ -38,7 +48,7 @@
     }
 
     /* Firefox */
-    input[type='number'] {
+    input[type="number"] {
       -moz-appearance: textfield;
     }
 

@@ -1,6 +1,10 @@
 @import "./src/styles.scss";
 
 .home {
+  @media screen and (max-width: 599px) {
+    font-size: 8.5px;
+  }
+
   &__header {
     max-width: 1024px;
     margin: 0 auto;
@@ -8,12 +12,16 @@
       url("../../../assets/images/ellipse.png");
     background-position: 70% 5%, 65% 85%;
     background-repeat: no-repeat, no-repeat;
-
     padding: 5.5em;
     text-align: center;
     line-height: 2em;
     font-size: 1.4em;
     font-weight: 350;
+
+    @media screen and (max-width: 599px) {
+      padding-bottom: 2em;
+    }
+
     span {
       color: $secondary-color;
       font-size: 1.6em;
@@ -32,6 +40,11 @@
       img {
         height: 100%;
         width: 100%;
+
+        @media screen and (max-width: 599px) {
+          height: 75%;
+          width: 75%;
+        }
       }
 
       p {
@@ -50,6 +63,11 @@
 
   &__consult {
     padding: 6em 0;
+
+    @media screen and (max-width: 599px) {
+      padding: 3em 1em;
+    }
+
     &__wrapper {
       max-width: 1024px;
       margin: 0 auto;
@@ -63,6 +81,11 @@
     }
 
     &__text {
+      @media screen and (max-width: 599px) {
+        margin-bottom: 4em;
+        text-align: center;
+      }
+
       h3 {
         font-size: 3em;
         letter-spacing: 0.5px;
@@ -93,6 +116,32 @@
         outline: 0;
         cursor: pointer;
         box-shadow: 3px 3px 6px 6px rgba(grey, 0.1);
+      }
+    }
+  }
+
+  &__clients {
+    &__wrapper {
+      max-width: 1024px;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+        font-size: 3em;
+        border-bottom: 7px solid $secondary-color;
+        line-height: 0.8;
+        display: inline-block;
+      }
+
+      .swiper-container {
+        figure {
+          margin: 0;
+          padding: 0;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
       }
     }
   }

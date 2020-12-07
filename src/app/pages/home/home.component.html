@@ -31,12 +31,14 @@
         class="home__consult__wrapper"
         fxLayout
         fxLayoutAlign="space-between center"
+        fxLayout.lt-sm="column"
       >
         <div
           class="home__consult__image"
           fxLayout
           fxLayoutAlign="center center"
           fxFlex="45"
+          fxFlexOrder.lt-sm="2"
         >
           <img src="assets/images/consult.png" alt="Consulting" />
         </div>
@@ -45,6 +47,8 @@
           fxLayout="column"
           fxLayoutAlign="space-between start"
           fxFlex="50"
+          fxFlexOrder.lt-sm="1"
+          fxLayoutAlign="center center"
         >
           <h3 translate="HOME-CONSULT_TITLE"></h3>
           <ul>
@@ -54,6 +58,21 @@
           </ul>
           <button translate="HOME-CONSULT_CONTACT_US"></button>
         </div>
+      </div>
+    </section>
+
+    <section class="home__clients">
+      <div
+        class="home__clients__wrapper"
+        fxLayout="column"
+        fxLayoutAlign="center center"
+      >
+        <h3 translate="HOME-CLIENTS_OUR_CLIENTS"></h3>
+        <!-- <swiper class="swiper-container" [config]="options">
+          <figure *ngFor="let image of sliderImages">
+            <img [src]="image" alt="" />
+          </figure>
+        </swiper> -->
       </div>
     </section>
   </div>

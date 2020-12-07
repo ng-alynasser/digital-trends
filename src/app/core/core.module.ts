@@ -17,6 +17,11 @@ import { TranslationLoaderService } from './services/translation-loader.service'
 import { SplashScreenService } from './services/splash-screen.service';
 import { StateService } from './services/state.service';
 import { NavbarMobileComponent } from './components/navbar-mobile/navbar-mobile.component';
+import {
+  SwiperConfigInterface,
+  SwiperModule,
+  SWIPER_CONFIG,
+} from 'ngx-swiper-wrapper';
 
 export function windowFactory(platformId: object): Window | undefined {
   if (isPlatformBrowser(platformId)) {
