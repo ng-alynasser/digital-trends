@@ -1,20 +1,53 @@
-<nav fxLayout="column" fxLayoutAlign="space-evenly center">
-  <fa-icon [icon]="closeIcon" fxFlexAlign="flex-end" (click)="close()" class="closeIcon"></fa-icon>
+<nav fxLayout="column" fxLayoutAlign="start center">
+  <fa-icon
+    [icon]="closeIcon"
+    fxFlexAlign="flex-end"
+    (click)="close()"
+    class="closeIcon"
+  ></fa-icon>
   <div fxLayout fxLayoutAlign="center center">
-    <img src="assets/images/dt-logo.png" alt="">
+    <img src="assets/images/dt-logo.png" alt="" />
   </div>
-  <ul class="nav__items" fxLayout="column" fxLayoutAlign="space-evenly center" fxFlex="60">
-    <li><a routerLink="/home" (click)="close()" routerLinkActive="nav__active" translate="HOME-NAVBAR_HOME"></a></li>
-    <li><a routerLink="/our-work" (click)="close()" routerLinkActive="nav__active" translate="HOME-NAVBAR_OUR_WORK"></a></li>
-    <li><a routerLink="/blog" (click)="close()" routerLinkActive="nav__active" translate="HOME-NAVBAR_BLOG"></a></li>
-    <li><a routerLink="/contact-us" (click)="close()" routerLinkActive="nav__active" translate="HOME-NAVBAR_CONTACT_US"></a></li>
-    <li class="nav__language"><a (click)="toggleLanguage()" translate="HOME-NAVBAR_LANGUAGE"></a></li>
+  <ul
+    class="nav__items"
+    fxLayout="column"
+    fxLayoutAlign="space-evenly center"
+    fxFlex="50"
+  >
+    <li>
+      <a
+        routerLink="/home"
+        (click)="close()"
+        routerLinkActive="nav__active"
+        translate="HOME-NAVBAR_HOME"
+      ></a>
+    </li>
+    <li>
+      <a
+        routerLink="/our-work"
+        (click)="close()"
+        routerLinkActive="nav__active"
+        translate="HOME-NAVBAR_OUR_WORK"
+      ></a>
+    </li>
+    <li>
+      <a
+        routerLink="/blog"
+        (click)="close()"
+        routerLinkActive="nav__active"
+        translate="HOME-NAVBAR_BLOG"
+      ></a>
+    </li>
+    <li>
+      <a
+        routerLink="/contact-us"
+        (click)="close()"
+        routerLinkActive="nav__active"
+        translate="HOME-NAVBAR_CONTACT_US"
+      ></a>
+    </li>
+    <li class="nav__language">
+      <a (click)="toggleLanguage()" translate="HOME-NAVBAR_LANGUAGE"></a>
+    </li>
   </ul>
-  <footer>
-    <hr>
-    <fa-icon [icon]="faLinkedIn" style = "color: rgb(0, 115, 177);"></fa-icon>
-    <fa-icon [icon]="faGoogle" style = "color: red;"></fa-icon>
-    <fa-icon [icon]="faTwitter" style = "color: rgba(29,161,242,1.00);"></fa-icon>
-    <fa-icon [icon]="faFacebook" style ="color: #385898"></fa-icon>
-  </footer>
 </nav>
