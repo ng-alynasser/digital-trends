@@ -17,11 +17,12 @@ import { TranslationLoaderService } from './services/translation-loader.service'
 import { SplashScreenService } from './services/splash-screen.service';
 import { StateService } from './services/state.service';
 import { NavbarMobileComponent } from './components/navbar-mobile/navbar-mobile.component';
+
 import {
-  SwiperConfigInterface,
-  SwiperModule,
-  SWIPER_CONFIG,
-} from 'ngx-swiper-wrapper';
+  CloudinaryConfiguration,
+  CloudinaryModule,
+} from '@cloudinary/angular-5.x';
+import { Cloudinary } from 'cloudinary-core';
 
 export function windowFactory(platformId: object): Window | undefined {
   if (isPlatformBrowser(platformId)) {
@@ -53,6 +54,9 @@ export function documentFactory(platformId: object): Document | undefined {
     FlexLayoutModule.withConfig({
       ssrObserveBreakpoints: ['xs', 'lt-md'],
     }),
+    CloudinaryModule.forRoot({ Cloudinary }, {
+      cloud_name: 'alynasser',
+    } as CloudinaryConfiguration),
   ],
   providers: [
     {

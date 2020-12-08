@@ -1,7 +1,7 @@
 <main class="work">
   <div class="work__wrapper">
     <div class="work__header">
-      <h1>Our work</h1>
+      <h1 translate="WORK_TITLE"></h1>
     </div>
   </div>
   <section
@@ -9,35 +9,35 @@
     fxLayout="column"
     fxLayoutAlign="center center"
   >
-    <h2>Our work</h2>
+    <h2 translate="WORK_TITLE"></h2>
 
     <section fxLayout="column" fxLayoutAlign="center center">
       <!-- Start of first row-->
       <div fxLayout="row">
         <!-- Start of first column of first row-->
-        <figure fxFlex="50">
-          <img src="assets/images/work/1.png" alt="" />
+        <figure fxFlex="50" (click)="open(0)">
+          <cl-image class="image" public-id="1_crdbdh.jpg"> </cl-image>
         </figure>
         <!-- End of first column of first row-->
         <!-- Start of second column of first row-->
         <div fxFlex="50" fxLayout="column">
           <!-- Start of first row of second column of first row-->
           <div fxLayout="row">
-            <figure fxFlex="50">
-              <img src="assets/images/work/2.png" alt="" />
+            <figure fxFlex="50" (click)="open(1)">
+              <cl-image class="image" public-id="2_j5phor.jpg"> </cl-image>
             </figure>
-            <figure fxFlex="50">
-              <img src="assets/images/work/3.png" alt="" />
+            <figure fxFlex="50" (click)="open(2)">
+              <cl-image class="image" public-id="3_uppyfb.jpg"> </cl-image>
             </figure>
           </div>
           <!-- End of first row of second column of first row-->
           <!-- Start of second row of second column of first row-->
           <div fxLayout="row">
-            <figure fxFlex="50">
-              <img src="assets/images/work/4.png" alt="" />
+            <figure fxFlex="50" (click)="open(3)">
+              <cl-image class="image" public-id="4_bnqn5r.jpg"> </cl-image>
             </figure>
-            <figure fxFlex="50">
-              <img src="assets/images/work/5.png" alt="" />
+            <figure fxFlex="50" (click)="open(4)">
+              <cl-image class="image" public-id="5_si6u4c.jpg"> </cl-image>
             </figure>
           </div>
           <!-- End of second row of second column of first row-->
@@ -48,28 +48,28 @@
 
       <!-- Start of second row-->
       <div fxLayout="row">
-        <figure fxFlex="35">
-          <img src="assets/images/work/6.png" alt="" />
+        <figure (click)="open(5)">
+          <cl-image class="image" public-id="6_vgvspe.jpg"> </cl-image>
         </figure>
-        <figure fxFlex="35">
-          <img src="assets/images/work/7.png" alt="" />
+        <figure (click)="open(6)">
+          <cl-image class="image" public-id="7_bs1xve.jpg"> </cl-image>
         </figure>
-        <figure fxFlex="30">
-          <img src="assets/images/work/8.png" alt="" />
+        <figure fxFlex="30" (click)="open(7)">
+          <cl-image class="image" public-id="8_lfbj1h.jpg"> </cl-image>
         </figure>
       </div>
       <!-- End of second row-->
 
       <!-- Start of third row-->
       <div fxLayout="row">
-        <figure fxFlex="30">
-          <img src="assets/images/work/9.png" alt="" />
+        <figure fxFlex="35" (click)="open(8)">
+          <cl-image class="image" public-id="9_dhmrny.jpg"> </cl-image>
         </figure>
-        <figure fxFlex="35">
-          <img src="assets/images/work/10.png" alt="" />
+        <figure fxFlex="35" (click)="open(9)">
+          <cl-image class="image" public-id="10_ae8dnv.jpg"> </cl-image>
         </figure>
-        <figure fxFlex="35">
-          <img src="assets/images/work/11.png" alt="" />
+        <figure (click)="open(10)">
+          <cl-image class="image" public-id="11_xv8kh2.jpg"> </cl-image>
         </figure>
       </div>
       <!-- End of third row-->
@@ -80,29 +80,29 @@
         <div fxLayout="column" fxFlex="50">
           <!-- Start of first row of first column of fourth row-->
           <div fxLayout="row">
-            <figure fxFlex="50">
-              <img src="assets/images/work/12.png" alt="" />
+            <figure (click)="open(11)">
+              <cl-image class="image" public-id="12_kmpjg1.jpg"> </cl-image>
             </figure>
-            <figure fxFlex="50">
-              <img src="assets/images/work/13.png" alt="" />
+            <figure (click)="open(12)">
+              <cl-image class="image" public-id="13_zrwh99.jpg"> </cl-image>
             </figure>
           </div>
           <!-- End of first row of first column of fourth row-->
           <!-- Start of second row of firtst column of fourth row-->
           <div fxLayout="row">
-            <figure fxFlex="50">
-              <img src="assets/images/work/14.png" alt="" />
+            <figure fxFlex="40" (click)="open(13)">
+              <cl-image class="image" public-id="14_cykr2x.jpg"> </cl-image>
             </figure>
-            <figure fxFlex="50">
-              <img src="assets/images/work/15.png" alt="" />
+            <figure fxFlex="60" (click)="open(14)">
+              <cl-image class="image" public-id="15_utkd4j.jpg"> </cl-image>
             </figure>
           </div>
           <!-- End of second row of first column of fourth row-->
         </div>
         <!-- End of first column of fourth row-->
         <!-- Start of second column of fourth row-->
-        <figure fxFlex="50">
-          <img src="assets/images/work/16.png" alt="" />
+        <figure fxFlex="50" (click)="open(15)">
+          <cl-image class="image" public-id="16_dqlenf.jpg"> </cl-image>
         </figure>
         <!-- End of second column of fourth row-->
       </div>
@@ -110,50 +110,50 @@
 
       <!-- Start of fifth row-->
       <div fxLayout="row">
-        <figure>
-          <img src="assets/images/work/17.png" alt="" />
+        <figure (click)="open(16)">
+          <cl-image class="image" public-id="17_dtak5b.jpg"> </cl-image>
         </figure>
-        <figure>
-          <img src="assets/images/work/18.png" alt="" />
+        <figure (click)="open(17)">
+          <cl-image class="image" public-id="18_ywl7hs.jpg"> </cl-image>
         </figure>
-        <figure>
-          <img src="assets/images/work/19.png" alt="" />
+        <figure (click)="open(18)">
+          <cl-image class="image" public-id="19_r3khk3.jpg"> </cl-image>
         </figure>
       </div>
       <!-- End of fifth row-->
 
       <!-- Start of sixth row-->
       <div fxLayout="row">
-        <figure>
-          <img src="assets/images/work/20.png" alt="" />
+        <figure (click)="open(19)">
+          <cl-image class="image" public-id="20_hufyky.jpg"> </cl-image>
         </figure>
-        <figure>
-          <img src="assets/images/work/21.png" alt="" />
+        <figure (click)="open(20)">
+          <cl-image class="image" public-id="21_tsklkk.jpg"> </cl-image>
         </figure>
-        <figure>
-          <img src="assets/images/work/22.png" alt="" />
+        <figure (click)="open(21)">
+          <cl-image class="image" public-id="22_yl8jxa.jpg"> </cl-image>
         </figure>
       </div>
       <!-- End of sixth row-->
 
       <!-- Start of seventh row-->
       <div fxLayout="row">
-        <figure fxFlex="50">
-          <img src="assets/images/work/23.png" alt="" />
+        <figure fxFlex="50" (click)="open(22)">
+          <cl-image class="image" public-id="23_lguiig.jpg"> </cl-image>
         </figure>
-        <figure fxFlex="50">
-          <img src="assets/images/work/24.png" alt="" />
+        <figure fxFlex="50" (click)="open(23)">
+          <cl-image class="image" public-id="24_tjsouo.jpg"> </cl-image>
         </figure>
       </div>
       <!-- End of seventh row-->
 
       <!-- Start of eighth row-->
       <div fxLayout="row">
-        <figure fxFlex="50">
-          <img src="assets/images/work/25.png" alt="" />
+        <figure fxFlex="50" (click)="open(24)">
+          <cl-image class="image" public-id="25_diifjn.jpg"> </cl-image>
         </figure>
-        <figure fxFlex="50">
-          <img src="assets/images/work/26.png" alt="" />
+        <figure fxFlex="50" (click)="open(25)">
+          <cl-image class="image" public-id="26_anpzqc.jpg"> </cl-image>
         </figure>
       </div>
       <!-- End of eighth row-->
