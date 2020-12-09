@@ -25,9 +25,33 @@ const routes: Routes = [
       import('./pages/work/work.module').then((m) => m.WorkModule),
   },
   {
+    path: 'branding',
+    loadChildren: () =>
+      import('./pages/branding/branding.module').then((m) => m.BrandingModule),
+  },
+  {
+    path: 'product-design',
+    loadChildren: () =>
+      import('./pages/product-design/product-design.module').then(
+        (m) => m.ProductDesignModule
+      ),
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',
+  },
+  {
+    path: 'branding',
+    loadChildren: () =>
+      import('./pages/branding/branding.module').then((m) => m.BrandingModule),
+  },
+  {
+    path: 'product-design',
+    loadChildren: () =>
+      import('./pages/product-design/product-design.module').then(
+        (m) => m.ProductDesignModule
+      ),
   },
   {
     path: '**',

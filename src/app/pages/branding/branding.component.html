@@ -1,0 +1,96 @@
+<main class="branding">
+  <div class="branding__wrapper">
+    <div class="branding__header" fxLayout="column">
+      <h1
+        fxFlexAlign="start"
+        fxFlexAlign.lt-md="center"
+        translate="BRADNING-HEADER_TITLE"
+      ></h1>
+      <ul
+        fxLayout="column"
+        fxLayoutAlign="center start"
+        fxFlexAlign.lt-md="center"
+      >
+        <li style="margin-left: -2.5em">
+          <span>&#x2752;</span>
+          {{ "BRANDING-HEADER_TITLE_FIRST_PART" | translate }}
+        </li>
+        <li>
+          {{ "BRANDING-HEADER_TITLE_SECOND_PART" | translate }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="branding__cards">
+      <div fxLayout fxLayout.lt-sm="column" fxLayoutAlign="space-between start">
+        <div fxFlex="30" fxLayout="column" fxLayoutAlign="space-between center">
+          <figure fxLayout fxLayoutAlign="center center">
+            <cl-image public-id="brand_d4enlp.png"> </cl-image>
+          </figure>
+          <h3 translate="BRANDING-CARD_BRANDING_TITLE"></h3>
+          <p translate="BRANDING-CARD_BRANDING_PARAGRAPH"></p>
+        </div>
+        <div fxFlex="30" fxLayout="column" fxLayoutAlign="space-between center">
+          <figure fxLayout fxLayoutAlign="center center">
+            <cl-image public-id="reflection_zklozk.png"> </cl-image>
+          </figure>
+          <h3 translate="BRANDING-CARD_REFLECTION_TITLE"></h3>
+          <p translate="BRANDING-CARD_REFLECTION_PARAGRAPH"></p>
+        </div>
+        <div fxFlex="30" fxLayout="column" fxLayoutAlign="space-between center">
+          <figure fxLayout fxLayoutAlign="center center">
+            <cl-image public-id="naming_t1bmlw.png"> </cl-image>
+          </figure>
+          <h3 translate="BRANDING-CARD_NAMING_TITLE"></h3>
+          <p translate="BRANDING-CARD_NAMING_PARAGRAPH"></p>
+        </div>
+      </div>
+      <div
+        fxLayout
+        fxLayout.lt-sm="column"
+        fxLayoutAlign="space-between start"
+        class="branding__cards__second-row"
+      >
+        <div fxFlex="30" fxLayout="column" fxLayoutAlign="space-between center">
+          <figure fxLayout fxLayoutAlign="center center">
+            <cl-image class="image" public-id="brandtology_moo6x6.png">
+            </cl-image>
+          </figure>
+          <h3 translate="BRANDING_CARD_BRANDOLOGY_TITLE"></h3>
+          <p translate="BRANDING_CARD_BRANDOLOGY_PARAGRAPH"></p>
+        </div>
+        <div fxFlex="30" fxLayout="column" fxLayoutAlign="space-between center">
+          <figure fxLayout fxLayoutAlign="center center">
+            <cl-image class="image" public-id="campaign_xx7rit.png"> </cl-image>
+          </figure>
+          <h3 translate="BRANDING_CARD_LAUNCH_TITLE"></h3>
+          <p translate="BRANDING_CARD_LAUNCH_PARAGRAPH"></p>
+        </div>
+        <div
+          fxFlex="30"
+          fxLayout="column"
+          fxLayoutAlign="space-between center"
+          class="special-card"
+        >
+          <figure fxLayout fxLayoutAlign="center center">
+            <cl-image class="image" public-id="strategy_henzh9.png"> </cl-image>
+          </figure>
+          <h3 translate="BRANDING-CARD_STRATEGY_TITLE"></h3>
+          <p translate="BRANDING-CARD_STRATEGY_PARAGRAPH"></p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="branding__care"
+      fxLayout="column"
+      fxLayoutAlign="space-between center"
+    >
+      <figure>
+        <cl-image class="image" public-id="Group_211_ttkzx5.png"> </cl-image>
+      </figure>
+      <h4 translate="BRANDING_CARE_TITLE"></h4>
+      <button translate="HOME-CONSULT_CONTACT_US"></button>
+    </div>
+  </div>
+</main>
