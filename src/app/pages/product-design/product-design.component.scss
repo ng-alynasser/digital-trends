@@ -1,0 +1,125 @@
+@import "./src/styles.scss";
+
+.product-design {
+  &__wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    background-image: url("../../../assets/images/rectangle.png"),
+      url("../../../assets/images/ellipse.png"),
+      url("../../../assets/images/header-bg.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 85% 0%, 20% 85%, 50% 75%;
+    background-size: auto, auto, 55%;
+    padding: 16em 0;
+
+    @media screen and (max-width: 959px) {
+      background-image: url("../../../assets/images/rectangle.png"),
+        url("../../../assets/images/ellipse.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 85% 0%, 20% 85%;
+      padding-bottom: 2em;
+      padding-top: 12em;
+      font-size: 7px;
+    }
+
+    h1 {
+      color: gray;
+      margin: 0;
+      font-size: 6em;
+      // margin-left: 0.5em;
+      border-bottom: 15px solid $secondary-color;
+      line-height: 0.2;
+      display: inline-block;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 959px) {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 0;
+        line-height: 0.01;
+      }
+
+      @media screen and (max-width: 599px) {
+        font-size: 4em;
+        line-height: 0;
+        border-bottom-width: 10px;
+      }
+    }
+
+    ul {
+      margin-top: 2em;
+      font-size: 1.4em;
+      list-style: none;
+
+      li:not(:first-of-type) {
+        margin-top: 0.6em;
+      }
+
+      li {
+        span {
+          display: inline-block;
+          font-size: 2em;
+          color: $secondary-color;
+          padding-right: 0.35em;
+        }
+      }
+    }
+  }
+
+  &__steps {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__first-step {
+    }
+  }
+
+  &__care {
+    margin-top: 5em;
+    margin-bottom: 4em;
+
+    h4 {
+      font-size: 3em;
+      margin-top: -1.75em;
+      margin-left: 3em;
+      margin-bottom: 0.75em;
+      letter-spacing: 0.5px;
+      color: rgba(black, 0.75);
+
+      @media screen and (max-width: 599px) {
+        font-size: 1.2em !important;
+        margin-top: 0.5em;
+      }
+    }
+
+    button {
+      background-color: $secondary-color;
+      padding: 0.5em 2.5em;
+      border: 0;
+      outline: 0;
+      border-radius: 5px;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: black;
+        color: $secondary-color;
+        transition: all 0.5s ease-in;
+      }
+    }
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+}

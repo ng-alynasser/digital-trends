@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { ProductDesignRoutingModule } from './product-design-routing.module';
 import { ProductDesignComponent } from './product-design.component';
-
+import { SharedModule } from '../../shared/shared.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { CloudinaryModule } from '@cloudinary/angular-5.x';
 
 @NgModule({
   declarations: [ProductDesignComponent],
   imports: [
-    CommonModule,
-    ProductDesignRoutingModule
-  ]
+    ProductDesignRoutingModule,
+    SharedModule,
+    CloudinaryModule,
+    FlexLayoutModule,
+  ],
 })
-export class ProductDesignModule { }
+export class ProductDesignModule {}
