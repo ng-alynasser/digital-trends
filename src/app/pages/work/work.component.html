@@ -11,7 +11,11 @@
   >
     <h2 translate="WORK_TITLE"></h2>
 
-    <section fxLayout="column" fxLayoutAlign="center center">
+    <section
+      *ngIf="!(isResponsive$ | async)"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
       <!-- Start of first row-->
       <div fxLayout="row">
         <!-- Start of first column of first row-->
@@ -157,6 +161,10 @@
         </figure>
       </div>
       <!-- End of eighth row-->
+    </section>
+
+    <section *ngIf="isResponsive$ | async">
+      <h1>Hi</h1>
     </section>
   </section>
 </main>
