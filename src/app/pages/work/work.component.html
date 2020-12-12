@@ -1,7 +1,19 @@
 <main class="work">
   <div class="work__wrapper">
-    <div class="work__header">
-      <h1 translate="WORK_TITLE"></h1>
+    <div class="work__header" fxLayout="row" fxLayoutAlign="center center">
+      <h1
+        [fxFlexOrder]="currentDir === 'rtl' ? 2 : 1"
+        [fxFlex]="currentDir === 'rtl' ? 20 : 33.5"
+        [fxFlex.lt-sm]="currentDir === 'rtl' ? 40 : 65"
+        translate="WORK_TITLE"
+      ></h1>
+      <figure
+        fxHide.lt-md
+        [fxFlexOrder]="currentDir === 'rtl' ? 1 : 2"
+        fxFlex="30"
+      >
+        <cl-image class="image" public-id="header-bg_qqixin.png"> </cl-image>
+      </figure>
     </div>
   </div>
   <section
@@ -163,8 +175,14 @@
       <!-- End of eighth row-->
     </section>
 
-    <section *ngIf="isResponsive$ | async">
-      <h1>Hi</h1>
+    <section
+      *ngIf="isResponsive$ | async"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <figure *ngFor="let image of images; let i = index">
+        <img [src]="image" class="image" (click)="open(i)" />
+      </figure>
     </section>
   </section>
 </main>

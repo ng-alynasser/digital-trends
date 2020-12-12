@@ -8,12 +8,10 @@
 
   &__header {
     background-image: url("../../../assets/images/rectangle.png"),
-      url("../../../assets/images/ellipse.png"),
-      url("../../../assets/images/header-bg.png");
+      url("../../../assets/images/ellipse.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 85% 0%, 20% 85%, 50% 75%;
-    background-size: auto, auto, 55%;
-    padding: 16em 0;
+    background-position: 85% 0%, 20% 85%;
+    background-size: auto, auto;
 
     @media screen and (max-width: 959px) {
       background-image: url("../../../assets/images/rectangle.png"),
@@ -28,27 +26,29 @@
     h1 {
       color: gray;
       margin: 0;
+      margin-bottom: 1em;
       font-size: 6em;
-      margin-left: 2.5em;
       border-bottom: 15px solid $secondary-color;
       line-height: 0.2;
       display: inline-block;
       text-transform: uppercase;
 
       @media screen and (max-width: 959px) {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-left: 0;
         line-height: 0.01;
       }
+    }
+
+    figure {
+      padding: 0;
+      margin: 0;
+      padding-top: 4em;
     }
   }
 
   &__gallery {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 6em 0 0;
+    padding: 0;
 
     h2 {
       font-size: 2em;

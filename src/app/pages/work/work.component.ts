@@ -3,6 +3,7 @@ import { MediaObserver } from '@angular/flex-layout';
 import { Lightbox } from 'ngx-lightbox';
 import { BehaviorSubject } from 'rxjs';
 import { images } from './images';
+import { DirectionService } from '../../core/services/direction.service';
 
 @Component({
   selector: 'app-work',
@@ -10,13 +11,15 @@ import { images } from './images';
   styleUrls: ['./work.component.scss'],
 })
 export class WorkComponent implements OnInit {
-  private readonly images = images;
+  public readonly images = images;
   private readonly albums = [];
+  public currentDir: string;
   isResponsive$ = new BehaviorSubject<boolean>(null);
 
   constructor(
     private readonly lightbox: Lightbox,
-    private readonly mediaObserver: MediaObserver
+    private readonly mediaObserver: MediaObserver,
+    private readonly directionService: DirectionService
   ) {}
 
   ngOnInit(): void {
@@ -34,6 +37,10 @@ export class WorkComponent implements OnInit {
       } else {
         this.isResponsive$.next(false);
       }
+    });
+
+    this.directionService.onDirectionChange().subscribe((direction) => {
+      this.currentDir = direction;
     });
   }
 
