@@ -139,5 +139,44 @@
       }
     },
     "READ_MORE": "Read more"
+  },
+  "PRODUCT_DESIGN": {
+    "HEADER": {
+      "TITLE": "Product Design",
+      "DESCRIPTION": "We transfer your initial ideas and perceptions to your product into high-quality digital photos with 3D technology."
+    },
+    "PRODUCT_NAME": "Product's name",
+    "PRODUCT_DEFINITION": "We are working to study the suitability of the product to the needs of users through the method of 5D.",
+    "FIRST_STEP": {
+      "TITLE": "First step",
+      "EXPLORATION": {
+        "TITLE": "Exploration: ",
+        "STEP_1": "Discover your new market",
+        "STEP_2": ", and analyzing consumer demand for competitors' emerging products."
+      },
+      "SELECTION": {
+        "TITLE": "Selection: ",
+        "STEP_1": "Define the target group",
+        "STEP_2": ", then determine customer needs and manufacturing materials."
+      }
+    },
+    "SECOND_STEP": {
+      "TITLE": "Second step",
+      "DESIGN": {
+        "TITLE": "Design: ",
+        "STEP_1": "3D design for several models with manufacturing details",
+        "STEP_2": ", to test it and then baptize the selection of the required design."
+      },
+      "PRODUCT_TESTING": {
+        "TITLE": "Product testing: ",
+        "STEP_1": "Test a prototype on clients",
+        "STEP_2": ", and make adjustments and improvements in order to develop the design."
+      }
+    },
+    "PRODUCT_SHOW": {
+      "TITLE": "Product show",
+      "STEP_1": "The goal of this final stage is to achieve product visibility and verification, from meeting customer needs by measuring their product experience",
+      "STEP_2": "We give great attention to the way packaging is designed to show the world a product that grabs attention."
+    }
   }
 }

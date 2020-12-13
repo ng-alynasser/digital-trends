@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { DirectionService } from '../../core/services/direction.service';
 
 @Component({
   selector: 'app-product-design',
   templateUrl: './product-design.component.html',
-  styleUrls: ['./product-design.component.scss']
+  styleUrls: ['./product-design.component.scss'],
 })
 export class ProductDesignComponent implements OnInit {
+  public currentDir = 'rtl';
 
-  constructor() { }
+  constructor(private readonly directionService: DirectionService) {}
 
   ngOnInit(): void {
+    this.directionService
+      .onDirectionChange()
+      .subscribe((dir) => (this.currentDir = dir));
   }
-
 }

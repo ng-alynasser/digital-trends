@@ -1,18 +1,34 @@
 <div class="product-design">
   <div class="product-design__wrapper">
-    <div class="product-design__header" fxLayout="column">
-      <h1 fxFlexAlign="start" fxLayout.lt-md="center">Product Design</h1>
-      <ul
-        fxLayout="column"
-        fxLayoutAlign="center start"
-        fxFlexAlign.lt-md="center"
+    <div class="product-design__header" fxLayout fxLayoutAlign="center center">
+      <div
+        [fxFlex]="currentDir === 'rtl' ? 53 : 53"
+        [fxFlexOrder]="currentDir === 'rtl' ? 2 : 1"
+        [fxFlex.lt-sm]="currentDir === 'rtl' ? 90 : 90"
+        fxLayout.lt-sm="column"
+        fxLayoutAlign.lt-sm="center center"
       >
-        <li style="margin-left: -2.5em">
-          <span>&#x2752;</span>
-          We transfer your initial ideas and perceptions to your product
-        </li>
-        <li>into high-quality digital photos with 3D technology.</li>
-      </ul>
+        <h1 fxFlexAlign="start" fxLayout.lt-md="center">
+          {{ "PRODUCT_DESIGN.HEADER.TITLE" | translate }}
+        </h1>
+        <ul
+          fxLayout="column"
+          fxLayoutAlign="center start"
+          fxFlexAlign.lt-md="center"
+        >
+          <li>
+            <span>&#x2752;</span>
+            {{ "PRODUCT_DESIGN.HEADER.DESCRIPTION" | translate }}
+          </li>
+        </ul>
+      </div>
+      <figure
+        fxFlex="32"
+        [fxFlexOrder]="currentDir === 'rtl' ? 1 : 2"
+        fxHide.lt-md
+      >
+        <cl-image class="image" public-id="header-bg_qqixin.png"> </cl-image>
+      </figure>
     </div>
   </div>
 
@@ -21,10 +37,9 @@
     fxLayout="column"
     fxLayoutAlign="center center"
   >
-    <h3>Product's name</h3>
+    <h3>{{ "PRODUCT_DESIGN.PRODUCT_NAME" | translate }}</h3>
     <p>
-      We are working to study the suitability of the product to the needs of
-      users through the method of 5D.
+      {{ "PRODUCT_DESIGN.PRODUCT_DEFINITION" | translate }}
     </p>
     <figure fxLayout>
       <cl-image class="image" public-id="01-min_zyf3k4.png"> </cl-image>
@@ -33,35 +48,51 @@
       class="product-design__steps__first-step"
       fxLayout
       fxLayoutAlign="space-between center"
+      fxLayout.lt-sm="column"
     >
-      <figure fxFlex="40">
+      <figure fxFlex="40" fxFlex.lt-sm="100">
         <cl-image class="image" public-id="02-min_ndl97j.png"> </cl-image>
       </figure>
-      <div fxFlex="60" fxLayout="column" fxLayoutAlign="center center">
-        <h4>First step</h4>
+      <div
+        fxFlex="50"
+        fxLayout="column"
+        fxLayoutAlign="space-between start"
+        fxLayoutAlign.lt-sm="center center"
+      >
+        <h4>{{ "PRODUCT_DESIGN.FIRST_STEP.TITLE" | translate }}</h4>
         <ul>
           <li>
-            <span>&#x2752;</span><span>Exploration</span
-            ><span>Discover your new market</span
+            <span>&#x2752;</span
+            ><span>{{
+              "PRODUCT_DESIGN.FIRST_STEP.EXPLORATION.TITLE" | translate
+            }}</span
+            ><span>{{
+              "PRODUCT_DESIGN.FIRST_STEP.EXPLORATION.STEP_1" | translate
+            }}</span
             ><span>
-              Analyzing consumer demand for competitors' emerging products
+              {{ "PRODUCT_DESIGN.FIRST_STEP.EXPLORATION.STEP_2" | translate }}
             </span>
           </li>
           <li>
-            <span>&#x2752;</span><span>Selection</span
-            ><span>Define the target group</span
-            ><span
-              >Then determine customer needs and manufacturing materials
+            <span>&#x2752;</span
+            ><span>{{
+              "PRODUCT_DESIGN.FIRST_STEP.SELECTION.TITLE" | translate
+            }}</span
+            ><span>{{
+              "PRODUCT_DESIGN.FIRST_STEP.SELECTION.STEP_1" | translate
+            }}</span
+            ><span>
+              {{ "PRODUCT_DESIGN.FIRST_STEP.SELECTION.STEP_2" | translate }}
             </span>
           </li>
         </ul>
       </div>
     </div>
-    <div fxLayout>
+    <div fxLayout style="margin-bottom: 0.3em" fxLayout.lt-sm="column">
       <figure fxLayout fxLayoutAlign="center center">
         <cl-image public-id="05-min_gegt6b.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAlign="center center">
+      <figure fxLayout fxLayoutAlign="center center" style="margin: 0 0.3em">
         <cl-image class="image" public-id="04-min_ougcob.png"> </cl-image>
       </figure>
       <figure fxLayout fxLayoutAlign="center center">
@@ -71,89 +102,109 @@
     <div
       class="product-design__steps__second-step"
       fxLayout
+      fxLayout.lt-sm="column"
       fxLayoutAlign="space-between center"
     >
-      <div fxFlex="60" fxLayout="column" fxLayoutAlign="center center">
-        <h4>Second step</h4>
+      <div
+        fxFlex="50"
+        fxLayout="column"
+        fxLayoutAlign="space-between start"
+        fxLayoutAlign.lt-sm="center center"
+      >
+        <h4>
+          {{ "PRODUCT_DESIGN.SECOND_STEP.TITLE" | translate }}
+        </h4>
         <ul>
           <li>
-            <span>&#x2752;</span><span>Design</span
+            <span>&#x2752;</span
+            ><span>{{
+              "PRODUCT_DESIGN.SECOND_STEP.DESIGN.TITLE" | translate
+            }}</span
             ><span
-              >3D design for several models with manufacturing details </span
+              >{{
+                "PRODUCT_DESIGN.SECOND_STEP.DESIGN.STEP_1" | translate
+              }} </span
             ><span>
-              To test it and then baptize the selection of the required design
+              {{ "PRODUCT_DESIGN.SECOND_STEP.DESIGN.STEP_2" | translate }}
             </span>
           </li>
           <li>
-            <span>&#x2752;</span><span>Product testing</span
-            ><span>Test a prototype on clients</span
+            <span>&#x2752;</span
+            ><span>{{
+              "PRODUCT_DESIGN.SECOND_STEP.PRODUCT_TESTING.TITLE" | translate
+            }}</span
+            ><span>{{
+              "PRODUCT_DESIGN.SECOND_STEP.PRODUCT_TESTING.STEP_1" | translate
+            }}</span
             ><span
-              >And make adjustments and improvements in order to develop the
-              design
+              >{{
+                "PRODUCT_DESIGN.SECOND_STEP.PRODUCT_TESTING.STEP_2" | translate
+              }}
             </span>
           </li>
         </ul>
       </div>
       <figure fxFlex="40">
-        <img
-          width="75"
-          height="75"
-          src="../../../assets/images/product-design.gif"
-          alt=""
-        />
+        <cl-image class="image" public-id="06-min_gnvnps.png"> </cl-image>
       </figure>
     </div>
-    <div fxLayout>
+    <div fxLayout fxLayout.lt-sm="column" style="margin-bottom: 0.3em">
       <figure fxLayout fxLayoutAlign="center center">
         <cl-image class="image" public-id="09-min_vzrokg.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAlign="center center">
+      <figure fxLayout fxLayoutAlign="center center" style="margin: 0 0.3em">
         <cl-image class="image" public-id="08-min_kofvma.png"> </cl-image>
       </figure>
       <figure fxLayout fxLayoutAling="center center">
         <cl-image class="image" public-id="07-min_yrugre.png"> </cl-image>
       </figure>
     </div>
-    <div fxLayout>
+    <div fxLayout fxLayout.lt-sm="column" style="margin-bottom: 0.3em">
       <figure fxLayout fxLayoutAlign="center center">
         <cl-image class="image" public-id="12-min_s5qroe.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAlign="center center">
+      <figure fxLayout fxLayoutAlign="center center" style="margin: 0 0.3em">
         <cl-image class="image" public-id="11-min_s2jh0j.png"> </cl-image>
       </figure>
       <figure fxLayout fxLayoutAling="center center">
         <cl-image class="image" public-id="10-min_trkrhs.png"> </cl-image>
       </figure>
     </div>
-    <div fxLayout fxLayoutAling="center center">
-      <figure fxFlex="50">
+    <div
+      class="product-design__steps__product-show"
+      fxLayout
+      fxLayout.lt-sm="column"
+      fxLayoutAlign="space-between center"
+    >
+      <figure fxFlex="40">
         <cl-image class="image" public-id="13-min_n0wd1o.png"> </cl-image>
       </figure>
-      <div fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
-        <h4>Product Show</h4>
+      <div
+        fxFlex="50"
+        fxLayout="column"
+        fxLayoutAlign="space-between start"
+        fxLayoutAlign.lt-sm="center center"
+      >
+        <h4>{{ "PRODUCT_DESIGN.PRODUCT_SHOW.TITLE" | translate }}</h4>
         <ul>
           <li>
-            <span>&#x2752;</span><span>Design</span
+            <span>&#x2752;</span
             ><span
-              >The goal of this final stage is to achieve product visibility and
-              verification</span
-            ><span>
-              From meeting customer needs by measuring their product experience
+              >{{ "PRODUCT_DESIGN.PRODUCT_SHOW.STEP_1" | translate }}
             </span>
           </li>
           <li>
-            <span>&#x2752;</span><span>Product testing</span
-            ><span
-              >We give great attention to the way packaging is designed </span
-            ><span>To show the world a product that grabs attention </span>
+            <span>&#x2752;</span
+            ><span>
+              {{ "PRODUCT_DESIGN.PRODUCT_SHOW.STEP_2" | translate }}</span
+            >
           </li>
         </ul>
       </div>
     </div>
-    <div fxLayout fxLayoutAlign="center center">
-      <figure fxFlex="80" fxLayout fxLayoutAlign="center center">
-        <cl-image class="image" public-id="Group_189_2x-min_ko8ofb.png">
-        </cl-image>
+    <div class="product-design__gif" fxLayout fxLayoutAlign="center center">
+      <figure fxLayout fxLayoutAlign="center center">
+        <img width="75" height="75" src="assets/images/product-design.gif" />
       </figure>
     </div>
     <div

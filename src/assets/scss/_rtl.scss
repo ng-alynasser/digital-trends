@@ -45,7 +45,46 @@
           margin-left: 0 !important;
 
           @media screen and (max-width: 599px) {
-            margin-left: 1em !important;
+            text-align: center !important;
+          }
+        }
+      }
+    }
+
+    .product-design {
+      &__header {
+        ul {
+          li {
+            span {
+              margin-left: 0 !important;
+              margin-right: -1.2em !important;
+            }
+          }
+        }
+      }
+
+      &__steps {
+        &__first-step,
+        &__second-step,
+        &__product-show {
+          ul {
+            li {
+              span:first-of-type {
+                margin-left: 0 !important;
+                margin-right: -1.5em !important;
+              }
+            }
+          }
+        }
+      }
+
+      &__care {
+        h4 {
+          font-size: 5em !important;
+          margin-left: 0 !important;
+
+          @media screen and (max-width: 599px) {
+            text-align: center !important;
           }
         }
       }
