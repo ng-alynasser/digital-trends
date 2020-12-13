@@ -3,8 +3,8 @@
     <div class="work__header" fxLayout="row" fxLayoutAlign="center center">
       <h1
         [fxFlexOrder]="currentDir === 'rtl' ? 2 : 1"
-        [fxFlex]="currentDir === 'rtl' ? 20 : 33.5"
-        [fxFlex.lt-sm]="currentDir === 'rtl' ? 40 : 65"
+        [fxFlex]="currentDir === 'rtl' ? 28 : 46"
+        [fxFlex.lt-sm]="currentDir === 'rtl' ? 55 : 65"
         translate="WORK_TITLE"
       ></h1>
       <figure
@@ -179,6 +179,7 @@
       *ngIf="isResponsive$ | async"
       fxLayout="column"
       fxLayoutAlign="center center"
+      class="responsive"
     >
       <figure *ngFor="let image of images; let i = index">
         <img [src]="image" class="image" (click)="open(i)" />

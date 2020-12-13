@@ -1,22 +1,48 @@
 <div class="blog">
   <div class="blog__wrapper">
     <section class="blog__header" fxLayout fxLayoutAlign="center center">
-      <h1 fxFlex="22">{{ "BLOG.HEADER" | translate }}</h1>
-      <figure fxFlex="32">
+      <h1
+        [fxFlex]="currentDir === 'rtl' ? 32 : 22"
+        [fxFlexOrder]="currentDir === 'rtl' ? 2 : 1"
+        [fxFlex.lt-sm]="currentDir === 'rtl' ? 63 : 47"
+      >
+        {{ "BLOG.HEADER" | translate }}
+      </h1>
+      <figure
+        fxFlex="32"
+        [fxFlexOrder]="currentDir === 'rtl' ? 1 : 2"
+        fxHide.lt-md
+      >
         <cl-image class="image" public-id="header-bg_qqixin.png"> </cl-image>
       </figure>
     </section>
 
-    <section class="blog__cards">
-      <div *ngFor="let blog of blogs">
-        <p>
+    <section
+      class="blog__cards"
+      fxLayout="row wrap"
+      fxLayoutAlign="space-between"
+      fxLayout.lt-sm="column"
+    >
+      <div
+        *ngFor="let blog of blogs"
+        fxFlex="30"
+        fxLayout="column"
+        fxLayoutAlign="space-between"
+      >
+        <figure fxLayout fxLayoutAlign="center center">
+          <img [src]="blog?.image" alt="" [routerLink]="['/blog', blog?.id]" />
+        </figure>
+        <strong>
           {{ "BLOG." + blog?.categoryName | translate }} |
           {{ "BLOG." + blog?.date | translate }}
-        </p>
+        </strong>
         <h3>{{ "BLOG." + blog?.title | translate }}</h3>
         <p>
           {{ "BLOG." + blog?.paragraph | translate }}
         </p>
+        <button [routerLink]="['/blog', blog?.id]" fxFlexAlign="center">
+          {{ "BLOG.READ_MORE" | translate }}
+        </button>
       </div>
     </section>
   </div>

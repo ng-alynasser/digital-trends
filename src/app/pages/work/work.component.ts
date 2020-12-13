@@ -13,7 +13,7 @@ import { DirectionService } from '../../core/services/direction.service';
 export class WorkComponent implements OnInit {
   public readonly images = images;
   private readonly albums = [];
-  public currentDir: string;
+  public currentDir = 'rtl';
   isResponsive$ = new BehaviorSubject<boolean>(null);
 
   constructor(
