@@ -39,22 +39,106 @@
   "BRANDING-CARD_STRATEGY_TITLE": "Brand strategy",
   "BRANDING-CARD_STRATEGY_PARAGRAPH": "We are working to create and develop a comprehensive branding strategy to clarify the purpose and goal of your project, with innovative design to ensure that your identity touches your specific audience.",
   "BRANDING_CARE_TITLE": "We always care about everything new",
-  "BLOG": {
+  "BLOGS": {
     "HEADER": "Blog",
-    "DATE": "Date",
-    "CATEGORY_NAME": "Category Name",
-    "TITLE_ONE": "Corporate power with digital presence in Saudi Arabia",
-    "PARAGRAPH_ONE": "The Kingdom of Saudi Arabia has taken quantum leaps to accelerate digital transformation to achieve the Kingdom's 2030 vision for an ambitious homeland with a vibrant society and prosperous economy...",
-    "TITLE_TWO": "Analyze social media data and its relationship with competitors",
-    "PARAGRAPH_TWO": "Over the past years, social media has become an essential component of digital marketing, as it gives companies an opportunity to get to know and communicate with target customers...",
-    "TITLE_THREE": "Coronavirus and the impact of global epidemics on brands",
-    "PARAGRAPH_THREE": "At the time of writing, the Coronavirus, known as Covid-19, is present in more than 71 countries around the world. The World Health Organization has been reluctant to describe the spread of Covid-19 as...",
-    "TITLE_FOUR": "How to make sure your brand is safe from the Coronavirus",
-    "PARAGRAPH_FOUR": "Harvard Business Review explains that the decisions you have to make as a brand to survive the Coronavirus are to do business anyway. There will always be external and global influences to be prepared for...",
-    "TITLE_FIVE": "The future of e-commerce with covid-19",
-    "PARAGRAPH_FIVE": "With the spread of the Coronavirus, Covid-19, and the consequent precautionary and preventive measures, and calls for social distancing, customers have turned towards electronic shopping sites away from...",
-    "TITLE_SIX": "The digital economy in Saudi Arabia",
-    "PARAGRAPH_SIX": "The tremendous advancement of information technology has led to fundamental changes in lifestyles in the Kingdom of Saudi Arabia. As this progress led to a radical change in the methods...",
+    "MORE_ARTICLES": "More articles",
+    "FIRST_BLOG": {
+      "DATE": "Date",
+      "CATEGORY_NAME": "Category Name",
+      "TITLE": "Corporate power with digital presence in Saudi Arabia",
+      "PARAGRAPH": "The Kingdom of Saudi Arabia has taken quantum leaps to accelerate digital transformation to achieve the Kingdom's 2030 vision for an ambitious homeland with a vibrant society and prosperous economy...",
+      "CONTENT": {
+        "PARAGRAPH_1": "The Kingdom of Saudi Arabia has taken quantum leaps to accelerate digital transformation to achieve the Kingdom's 2030 vision for an ambitious homeland with a vibrant society and a prosperous economy. With the aim of reaching an information society and a digital economy, to be a digital model that achieves economic sustainability and global leadership, and improves the quality of life.",
+        "PARAGRAPH_2": "The number of Internet users in the Kingdom is equal to 30 million, equivalent to 91% of the total population, which made digital presence necessary for commercial and service companies as the easiest way to offer and provide services in all its forms.",
+        "SECONDARY_TITLE": "The importance of digital presence for commercial and service companies:",
+        "SECONDARY_TITLE_1": "Priority and competition:",
+        "SECONDARY_PARAGRAPH_1": "The presence of your company in the digital world in the midst of the great competitive environment between companies is one of the most important reasons for educating customers and drawing their attention about your services or products.",
+        "SECONDARY_TITLE_2": "To make getting to your company easier:",
+        "SECONDARY_PARAGRAPH_2": "One of the most important advantages of being in the world is the number, easy access to your company without barriers, following your customers, getting to know their comments about your business and their reactions about your product or service, and working to satisfy them.",
+        "SECONDARY_TITLE_3": "To achieve your company's goals:",
+        "SECONDARY_PARAGRAPH_3": "Being in the digital world helps you achieve your goals with ease because the digital world is full of opportunities that help you improve your workflow and expand and grow more easily.",
+        "SECONDARY_TITLE_4": "Raise efficiency and productivity:",
+        "SECONDARY_PARAGRAPH_4": "Your presence in the digital world helps you keep up with everything new and reach to raise efficiency and productivity inside and outside your company and increase the loyalty of your customers and employees by activating your services or products in the digital world. Digital transformation takes time and effort and it has become easy with our digital agency."
+      }
+    },
+    "SECOND_BLOG": {
+      "DATE": "Date",
+      "CATEGORY_NAME": "Category Name",
+      "TITLE": "Analyze social media data and its relationship with competitors",
+      "PARAGRAPH": "Over the past years, social media has become an essential component of digital marketing, as it gives companies an opportunity to get to know and communicate with target customers...",
+      "CONTENT": {
+        "PARAGRAPH_1": "Over the past years, social media has become an essential component of digital marketing, as it gives companies an opportunity to get to know and communicate with target customers. It is also an opportunity to learn about all competitors' activities. Hence the importance of monitoring and analyzing social media sites continuously to exploit this marketing power for the benefit of your company in an effective way.",
+        "PARAGRAPH_2": "Also, analyzing social media data will help you identify your competitors and the social platforms they use. Also, data analysis enables you to identify social threats and risks to your company. It helps you develop your company's social media strategy.",
+        "SECONDARY_TITLE": "Importance of social media data analysis:",
+        "SECONDARY_TITLE_1": "Developing your company's accounts:",
+        "SECONDARY_PARAGRAPH_1": "When analyzing social media data, you now know who your customers are and what their interests and orientations are, which enables you to develop your account and create an accurate strategy for customers.",
+        "SECONDARY_TITLE_2": "Market Watch:",
+        "SECONDARY_PARAGRAPH_2": "You can analyze the data, follow the market situation on social media, view the advertising campaigns of competitors, and monitor the levels of customer interaction with them.",
+        "SECONDARY_TITLE_3": "Prepare premium content:",
+        "SECONDARY_PARAGRAPH_3": "When analyzing social media data, you are able to know the type of content that attracts customers the most, whether it is written or visual. And you can prepare distinctive content in an integrated and clear manner for target customers.",
+        "SECONDARY_TITLE_4": "Performance Measurement :",
+        "SECONDARY_PARAGRAPH_4": "By analyzing social media data, you can measure the extent of your influence on customers and determine your precise points of influence, whether they are positive, negative or neutral, to determine the volume of interaction and interest for your brand.",
+        "SECONDARY_PARAGRAPH_5": "Analyzing social media data takes time and effort, and it has become easy with the existence of our digital agency."
+      }
+    },
+    "THIRD_BLOG": {
+      "DATE": "Date",
+      "CATEGORY_NAME": "Category Name",
+      "TITLE": "Coronavirus and the impact of global epidemics on brands",
+      "PARAGRAPH": "At the time of writing, the Coronavirus, known as Covid-19, is present in more than 71 countries around the world. The World Health Organization has been reluctant to describe the spread of Covid-19 as...",
+      "CONTENT": {
+        "PARAGRAPH_1": "At the time of writing, the Coronavirus, known as Covid-19, is present in more than 71 countries around the world. The World Health Organization was reluctant to describe the spread of Covid-19 as a pandemic, after the violent reaction to the outbreak of SARS in 2009. However, many experts indicate that it is now entering areas that most of us would agree as 'epidemic ratios'.",
+        "PARAGRAPH_2": "While the greatest concern is to reduce the health impact on populations around the world, we also recognize that the global spread of diseases has the potential to significantly influence brands. In fact, the Organization for Economic Cooperation and Development (OECD) predicted that the global economy would grow at its lowest rate since 2009, in the wake of the financial crisis. They estimate that a 'more intense' outbreak could cut global economic growth in half.",
+        "PARAGRAPH_3": "We are also already seeing noticeable financial impacts on all companies due to the Coronavirus, simply because of the impact on financial markets around the world. The real problem may be due to individual brands, and specifically within different sectors.",
+        "SECONDARY_TITLE": "Why is the global pandemic affecting brands?",
+        "SECONDARY_PARAGRAPH_1": "Let's take a look at the early indications in the aviation sector; The sector that has been clearly affected by the travel closure with the spread of the virus. The International Air Transport Association (IATA) says the aviation sector could lose $ 29 billion.",
+        "SECONDARY_PARAGRAPH_2": "There is already a complaint that cruises will be hit hard, after being classified as a 'floating petri dish', as the Coronavirus spreads among Diamond Princess residents. Cruises as a whole will likely need to reinvent themselves moving forward. In situations like these, all travel and tourism brands are bound to feel the impact of the coronavirus for a long time to come."
+      }
+    },
+    "FOURTH_BLOG": {
+      "DATE": "Date",
+      "CATEGORY_NAME": "Category Name",
+      "TITLE": "How to make sure your brand is safe from the Coronavirus",
+      "PARAGRAPH": "Harvard Business Review explains that the decisions you have to make as a brand to survive the Coronavirus are to do business anyway. There will always be external and global influences to be prepared for...",
+      "CONTENT": {
+        "PARAGRAPH_1": "Harvard Business Review explains that the decisions you have to make as a brand to survive the Coronavirus are to do business anyway. There will always be external and global influences around to be prepared for.",
+        "PARAGRAPH_2": "In the short term of the crisis, as is now the case with Covid-19, it is imperative that you be fully aware of what is going on and take a flexible approach to managing it. It is this flexibility that should help your business weather the storm. Add to that the ability to communicate well. If your employees, customers, or clients can see that you are calm and in control, and that you are a source of stability at a time of global fear, then their brand loyalty will continue into the future. Remember, everyone is bombarded with mixed information. If your branding is the calm in the storm, conveying true and accurate information, then you are putting yourself in a position of reputable and trustworthy. It is imperative that steps be taken to protect your business. By restricting travel and remote work as much as possible, You must be able to keep your workforce safe and functional. In a supply chain business, you will need to ensure that you have various alternative options. Build flexibility in how your business operates, and work on how to cut costs as you need. However, it is worth saying that not all brands will be affected equally. So, what matters to brands now is how to make sure their business thrives in the end.",
+        "SECONDARY_TITLE": "Now and in the future",
+        "SECONDARY_PARAGRAPH_1": "Going forward, your branding approach will depend on how you survive the coronavirus. If you become an outlet in the storm. However, if the coronavirus hits your business hard, the recovery may involve rebuilding a new strategy. For your brand to move forward into the future, and put the Coronavirus behind you.",
+        "SECONDARY_PARAGRAPH_2": "We are here to help your brand navigate its way through the current global turmoil. Contact us and we'll support your brand over the coming months."
+      }
+    },
+    "FIFTH_BLOG": {
+      "DATE": "Date",
+      "CATEGORY_NAME": "Category Name",
+      "TITLE": "The future of e-commerce with covid-19",
+      "PARAGRAPH": "With the spread of the Coronavirus, Covid-19, and the consequent precautionary and preventive measures, and calls for social distancing, customers have turned towards electronic shopping sites away from...",
+      "CONTENT": {
+        "PARAGRAPH_1": "With the spread of the Coronavirus, Covid-19, and the consequent precautionary and preventive measures, and calls for social distancing, customers have turned towards electronic shopping sites away from gatherings for fear of infection.",
+        "PARAGRAPH_2": "Despite the heavy losses in many sectors that were severely affected, but in contrast to this trend, e-commerce was able to achieve profits and success, as it witnessed an increasing polarization by consumers during the last period.",
+        "PARAGRAPH_3": "The biggest gains were made in favor of e-commerce, as many of them witnessed a massive increase in the number of orders as consumers resorted to quarantine to huge distribution and delivery companies to provide daily necessities.",
+        "SECONDARY_TITLE": "What are the positive effects of the covid-19 crisis on e-commerce?",
+        "SECONDARY_PARAGRAPH_1": "After the deterioration of conditions, the suspension of industries, and the damage to many important economic sectors, e-commerce has proven an important fact that serves the global trade sector, as it is one of the sectors that will not be affected by the crisis of the spread of the Coronavirus, and the trend is to create electronic stores to display their goods to the public.",
+        "SECONDARY_PARAGRAPH_2": "What distinguishes e-commerce from others is the saving of time and effort as dealing with electronic stores would have met the needs of many customers who were detained by their fears of the virus, in addition to the ban imposed in many countries. And among the most important features in light of the Coronavirus COVID-19 crisis are The ability to pay from home to ensure safety and maintain the safety of customers.",
+        "SECONDARY_PARAGRAPH_3": "The online store maintains the merchant in it on his customers and the popularity of his trade and services and contributes to the acquisition of new skills related to working on the online store, communicating with customers remotely and serving them around the clock."
+      }
+    },
+    "SIXTH_BLOG": {
+      "DATE": "Date",
+      "CATEGORY_NAME": "Category Name",
+      "TITLE": "The digital economy in Saudi Arabia",
+      "PARAGRAPH": "The tremendous advancement of information technology has led to fundamental changes in lifestyles in the Kingdom of Saudi Arabia. As this progress led to a radical change in the methods...",
+      "CONTENT": {
+        "PARAGRAPH_1": "The tremendous advancement of information technology has led to fundamental changes in lifestyles in the Kingdom of Saudi Arabia. As this progress led to a radical change in the methods and means of implementing economic activities, and produced a new type of economy known as the digital economy, and its positive impact was reflected on society in general, as the transformation to the digital economy is sufficient to change and achieve new events that positively affect the economic interests of the Kingdom.",
+        "SECONDARY_TITLE_1": "What is the digital economy?",
+        "SECONDARY_PARAGRAPH_1": "It is the economy that depends on digital technologies, and it is a term that refers to all economic transactions that occur over the Internet. It merges the digital economy and the traditional economy into one.",
+        "SECONDARY_PARAGRAPH_2": "The digital economy consists of two basic components: the first is e-business and the second is e-commerce. Where the digital economy aims to convert traditional operations into electronic ones. It aims to change the method of carrying out economic activities from buying, selling and exchanging goods, services and information using the electronic field through e-commerce.",
+        "SECONDARY_TITLE_3": "Characteristics of the digital economy:",
+        "SECONDARY_PARAGRAPH_3": "The digital economy is distinguished by the fact that it stimulates various institutions to develop on their own in order to be attractive to consumers, as it allows a wide range of choices in the field of trade and provides the consumer with the confidence he needs. There are no limits in the amount of digital operations that are sent and received, as it links all companies, individuals and investors in same time.",
+        "SECONDARY_TITLE_4": "Models of the digital economy:",
+        "SECONDARY_PARAGRAPH_4": "There are several models and examples of traditional companies turning to success in the digital economy, for example, most retailers have developed websites to enable online sales, and retailers who think about future work and turn towards modern and digital technologies have become their goal of reaching customers. Wherever they are and provide them with appropriate services."
+      }
+    },
     "READ_MORE": "Read more"
   }
 }

@@ -1,3 +1,57 @@
-<p>
-  single-blog works!
-</p>
+<div class="single-blog">
+  <section class="single-blog__cover">
+    <figure fxLayout fxLayoutAlign="center center">
+      <img [src]="blog?.cover" alt="" />
+    </figure>
+  </section>
+
+  <section class="single-blog__content">
+    <h2>{{ blog?.title | translate }}</h2>
+    <ng-container *ngFor="let para of blog?.mainContent?.mainParagraphs">
+      <p>{{ para | translate }}</p>
+    </ng-container>
+
+    <h3>{{ blog?.mainContent?.secondaryTitle | translate }}</h3>
+    <ng-container *ngFor="let c of blog?.mainContent?.secondaryContent">
+      <h4 *ngIf="c?.title">- {{ c?.title | translate }}</h4>
+      <p>{{ c?.paragraph | translate }}</p>
+    </ng-container>
+  </section>
+
+  <div
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    class="single-blog__others"
+  >
+    <h3 class="single-blog__others__title">
+      {{ "BLOGS.MORE_ARTICLES" | translate }}
+    </h3>
+    <section
+      fxLayout="row wrap"
+      fxLayoutAlign="space-between"
+      fxLayout.lt-sm="column"
+    >
+      <div
+        *ngFor="let blog of moreBlogs"
+        fxFlex="30"
+        fxLayout="column"
+        fxLayoutAlign="space-between"
+      >
+        <figure fxLayout fxLayoutAlign="center center">
+          <img [src]="blog?.image" alt="" />
+        </figure>
+        <strong>
+          {{ blog?.categoryName | translate }} |
+          {{ blog?.date | translate }}
+        </strong>
+        <h3>{{ blog?.title | translate }}</h3>
+        <p>
+          {{ blog?.paragraph | translate }}
+        </p>
+        <button [routerLink]="['../blog', blog?.id]" fxFlexAlign="center">
+          {{ "BLOGS.READ_MORE" | translate }}
+        </button>
+      </div>
+    </section>
+  </div>
+</div>

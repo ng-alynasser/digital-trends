@@ -6,7 +6,7 @@
         [fxFlexOrder]="currentDir === 'rtl' ? 2 : 1"
         [fxFlex.lt-sm]="currentDir === 'rtl' ? 63 : 47"
       >
-        {{ "BLOG.HEADER" | translate }}
+        {{ "BLOGS.HEADER" | translate }}
       </h1>
       <figure
         fxFlex="32"
@@ -33,15 +33,15 @@
           <img [src]="blog?.image" alt="" [routerLink]="['/blog', blog?.id]" />
         </figure>
         <strong>
-          {{ "BLOG." + blog?.categoryName | translate }} |
-          {{ "BLOG." + blog?.date | translate }}
+          {{ blog?.categoryName | translate }} |
+          {{ blog?.date | translate }}
         </strong>
-        <h3>{{ "BLOG." + blog?.title | translate }}</h3>
+        <h3>{{ blog?.title | translate }}</h3>
         <p>
-          {{ "BLOG." + blog?.paragraph | translate }}
+          {{ blog?.paragraph | translate }}
         </p>
         <button [routerLink]="['/blog', blog?.id]" fxFlexAlign="center">
-          {{ "BLOG.READ_MORE" | translate }}
+          {{ "BLOGS.READ_MORE" | translate }}
         </button>
       </div>
     </section>
