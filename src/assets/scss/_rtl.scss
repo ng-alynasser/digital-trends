@@ -20,25 +20,21 @@
     .branding {
       &__header {
         h1 {
-          align-self: flex-end !important;
-          margin-left: 0 !important;
-          line-height: 0.3 !important;
+          font-size: 6em !important;
+          line-height: 0.15 !important;
 
           @media screen and (max-width: 599px) {
-            margin: 0 auto !important;
-            margin-bottom: 0.5em !important;
+            font-size: 4em !important;
+            line-height: 0 !important;
           }
         }
+
         ul {
-          align-self: flex-end !important;
-          margin-left: 10em;
-
-          @media screen and (max-width: 599px) {
-            margin: 0 auto !important;
-          }
-
-          li:not(:first-of-type) {
-            margin-right: 3em;
+          li {
+            span {
+              margin-left: 0 !important;
+              margin-right: -1.2em !important;
+            }
           }
         }
       }

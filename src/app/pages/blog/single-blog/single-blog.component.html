@@ -38,7 +38,7 @@
         fxLayoutAlign="space-between"
       >
         <figure fxLayout fxLayoutAlign="center center">
-          <img [src]="blog?.image" alt="" />
+          <img [src]="blog?.image" alt="" [routerLink]="['..', blog?.id]" />
         </figure>
         <strong>
           {{ blog?.categoryName | translate }} |
@@ -48,7 +48,7 @@
         <p>
           {{ blog?.paragraph | translate }}
         </p>
-        <button [routerLink]="['../blog', blog?.id]" fxFlexAlign="center">
+        <button [routerLink]="['..', blog?.id]" fxFlexAlign="center">
           {{ "BLOGS.READ_MORE" | translate }}
         </button>
       </div>
