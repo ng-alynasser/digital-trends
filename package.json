@@ -41,7 +41,6 @@
     "express": "^4.15.2",
     "localstorage-polyfill": "^1.0.1",
     "ngx-lightbox": "^2.2.2",
-    "ngx-swiper-wrapper": "^10.0.0",
     "normalize.css": "^8.0.1",
     "rxjs": "~6.6.0",
     "swiper": "^6.3.5",

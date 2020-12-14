@@ -10,10 +10,10 @@ export class BlogService {
       title: 'BLOGS.FIRST_BLOG.TITLE',
       paragraph: 'BLOGS.FIRST_BLOG.PARAGRAPH',
       cover:
-        'https://res.cloudinary.com/alynasser/image/upload/v1607851312/blogs/blog-detail-4-min_qrunjc.png',
+        'https://res.cloudinary.com/alynasser/image/upload/v1607910122/blogs/1_vzh2sb.png',
 
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1607820731/blogs/6-min_d9dwpo.png',
+        'https://res.cloudinary.com/alynasser/image/upload/v1607910122/blogs/1_vzh2sb.png',
       mainContent: {
         mainParagraphs: [
           'BLOGS.FIRST_BLOG.CONTENT.PARAGRAPH_1',
@@ -50,7 +50,7 @@ export class BlogService {
         'https://res.cloudinary.com/alynasser/image/upload/v1607851312/blogs/blog-detail-4-min_qrunjc.png',
 
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1607820818/blogs/4-min_ohecu4.png',
+        'https://res.cloudinary.com/alynasser/image/upload/v1607910121/blogs/2_ctz91t.png',
       mainContent: {
         mainParagraphs: [
           'BLOGS.SECOND_BLOG.CONTENT.PARAGRAPH_1',
@@ -90,7 +90,7 @@ export class BlogService {
         'https://res.cloudinary.com/alynasser/image/upload/v1607851312/blogs/blog-detail-4-min_qrunjc.png',
 
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1607820850/blogs/3-min_ao0lwg.png',
+        'https://res.cloudinary.com/alynasser/image/upload/v1607910122/blogs/3_hnkjla.png',
       mainContent: {
         mainParagraphs: [
           'BLOGS.THIRD_BLOG.CONTENT.PARAGRAPH_1',
@@ -118,7 +118,7 @@ export class BlogService {
         'https://res.cloudinary.com/alynasser/image/upload/v1607851312/blogs/blog-detail-4-min_qrunjc.png',
 
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1607820884/blogs/2-min_csp15r.png',
+        'https://res.cloudinary.com/alynasser/image/upload/v1607910122/blogs/4_ymaqus.png',
       mainContent: {
         mainParagraphs: [
           'BLOGS.FOURTH_BLOG.CONTENT.PARAGRAPH_1',
@@ -145,7 +145,7 @@ export class BlogService {
         'https://res.cloudinary.com/alynasser/image/upload/v1607851312/blogs/blog-detail-4-min_qrunjc.png',
 
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1607820918/blogs/5-min_pbqwct.png',
+        'https://res.cloudinary.com/alynasser/image/upload/v1607910122/blogs/5_ajzyfz.png',
       mainContent: {
         mainParagraphs: [
           'BLOGS.FIFTH_BLOG.CONTENT.PARAGRAPH_1',
@@ -175,7 +175,7 @@ export class BlogService {
       cover:
         'https://res.cloudinary.com/alynasser/image/upload/v1607851312/blogs/blog-detail-4-min_qrunjc.png',
       image:
-        'https://res.cloudinary.com/alynasser/image/upload/v1607820953/blogs/1-min_vfildv.png',
+        'https://res.cloudinary.com/alynasser/image/upload/v1607910122/blogs/6_aais58.png',
       mainContent: {
         mainParagraphs: ['BLOGS.SIXTH_BLOG.CONTENT.PARAGRAPH_1'],
         secondaryContent: [
