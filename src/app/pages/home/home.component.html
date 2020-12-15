@@ -15,9 +15,14 @@
     <h3>{{ "HOME-OUR_SERVICES" | translate }}</h3>
     <div class="home__services__map" fxLayout fxLayoutAlign="center">
       <figure class="roadmap" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/skeleton.png" alt="" />
+        <img src="assets/images/map/map.png" alt="" />
       </figure>
-      <figure class="map-1" fxLayout fxLayoutAlign="center center">
+      <figure
+        class="map-1"
+        fxLayout
+        fxLayoutAlign="center center"
+        routerLink="/branding"
+      >
         <img src="assets/images/map/map-1.png" alt="" />
       </figure>
       <figure class="map-2" fxLayout fxLayoutAlign="center center">
@@ -28,6 +33,34 @@
       </figure>
       <figure class="map-4" fxLayout fxLayoutAlign="center center">
         <img src="assets/images/map/map-4.png" alt="" />
+      </figure>
+      <figure class="map-5" fxLayout fxLayoutAlign="center center">
+        <img src="assets/images/map/map-5.png" alt="" />
+      </figure>
+      <figure class="map-6" fxLayout fxLayoutAlign="center center">
+        <img src="assets/images/map/map-6.png" alt="" />
+      </figure>
+      <figure
+        class="map-7"
+        fxLayout
+        fxLayoutAlign="center center"
+        (click)="triggerScrollToContactUs()"
+      >
+        <img src="assets/images/map/map-7.png" alt="" />
+      </figure>
+      <figure
+        class="map-8"
+        fxLayout
+        fxLayoutAlign="center center"
+        routerLink="/product-design"
+      >
+        <img src="assets/images/map/map-8.png" alt="" />
+      </figure>
+      <figure class="map-9" fxLayout fxLayoutAlign="center center">
+        <img src="assets/images/map/map-9.png" alt="" />
+      </figure>
+      <figure class="map-10" fxLayout fxLayoutAlign="center center">
+        <img src="assets/images/map/map-10.png" alt="" />
       </figure>
     </div>
   </section>
@@ -40,7 +73,7 @@
       fxLayout.lt-sm="column"
       fxLayoutAlign.lt-sm="center center"
     >
-      <p>
+      <p routerLink="/our-work">
         <span translate="HOME-CHECK_CHECK"></span>
         {{ "HOME-CHECK_OUR_WORK" | translate }}
       </p>
@@ -60,7 +93,7 @@
       <div
         class="home__consult__image"
         fxLayout
-        fxLayoutAlign="center center"
+        fxLayoutAlign="space-between center"
         fxFlex="45"
         fxFlexOrder.lt-sm="2"
       >
@@ -72,7 +105,7 @@
         fxLayoutAlign="space-between start"
         fxFlex="50"
         fxFlexOrder.lt-sm="1"
-        fxLayoutAlign="center center"
+        fxLayoutAlign="center start"
       >
         <h3 translate="HOME-CONSULT_TITLE"></h3>
         <ul>
@@ -80,7 +113,10 @@
           <li translate="HOME-CONSULT_ITEM_TWO"></li>
           <li translate="HOME-CONSULT_ITEM_THREE"></li>
         </ul>
-        <button translate="HOME-CONSULT_CONTACT_US"></button>
+        <button
+          translate="HOME-CONSULT_CONTACT_US"
+          (click)="triggerScrollToContactUs()"
+        ></button>
       </div>
     </div>
   </section>

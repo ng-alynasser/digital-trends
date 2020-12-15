@@ -26,16 +26,19 @@
       <div
         *ngFor="let blog of blogs"
         fxFlex="30"
+        fxFlex.lt-sm="100"
         fxLayout="column"
-        fxLayoutAlign="space-between"
+        fxLayoutAlign="space-between center"
       >
         <figure fxLayout fxLayoutAlign="center center">
-          <img [src]="blog?.image" alt="" [routerLink]="['/blog', blog?.id]" />
+          <img
+            class="image"
+            [src]="blog?.image"
+            alt=""
+            [routerLink]="['/blog', blog?.id]"
+          />
         </figure>
-        <strong>
-          {{ blog?.categoryName | translate }} |
-          {{ blog?.date | translate }}
-        </strong>
+
         <h3>{{ blog?.title | translate }}</h3>
         <p>
           {{ blog?.paragraph | translate }}

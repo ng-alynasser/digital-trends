@@ -4,10 +4,12 @@ import { distinctUntilChanged, map } from 'rxjs/operators';
 
 export interface AppState {
   mobileNavMenuIsOpen: boolean;
+  triggerScrollToContactUs: boolean;
 }
 
 export const initialState: AppState = {
   mobileNavMenuIsOpen: false,
+  triggerScrollToContactUs: false,
 };
 
 @Injectable()

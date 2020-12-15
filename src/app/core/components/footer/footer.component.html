@@ -27,12 +27,13 @@
 
     <section class="footer__form" fxFlex="35">
       <h3 translate="HOME-FOOTER_FORM_TITLE"></h3>
-      <form fxLayout="column">
+      <form fxLayout="column" id="contact-us">
         <div fxLayout="row" fxLayoutAlign="space-between center">
           <input
             fxFlex="48"
             type="text"
             [placeholder]="'HOME-FOOTER_FORM_NAME' | translate"
+            #name
           />
           <input
             fxFlex="48"

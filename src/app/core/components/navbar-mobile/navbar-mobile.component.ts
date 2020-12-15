@@ -47,4 +47,9 @@ export class NavbarMobileComponent {
   close(): void {
     this.stateService.setState('mobileNavMenuIsOpen', false);
   }
+
+  triggerScrollToContactUs(): void {
+    this.close();
+    this.stateService.setState('triggerScrollToContactUs', true);
+  }
 }

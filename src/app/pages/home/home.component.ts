@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollService } from '../../core/services/scroll.service';
+import { StateService } from '../../core/services/state.service';
 
 @Component({
   selector: 'app-home',
@@ -36,7 +38,11 @@ export class HomeComponent implements OnInit {
     'assets/images/clients/waha waves.png',
   ];
 
-  constructor() {}
+  constructor(private readonly stateService: StateService) {}
 
   ngOnInit(): void {}
+
+  triggerScrollToContactUs(): void {
+    this.stateService.setState('triggerScrollToContactUs', true);
+  }
 }

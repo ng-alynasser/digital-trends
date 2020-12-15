@@ -52,15 +52,16 @@
   &__others {
     margin: 0 auto;
     max-width: 1024px;
-    padding: 1em;
+    padding: 0 1em;
 
     @media screen and (max-width: 599px) {
       font-size: 8px;
     }
 
-    &__title {
-      font-size: 4em;
+    h4 {
+      font-size: 2em;
       border-bottom: 6px solid $secondary-color;
+      margin: 2em 0;
 
       @media screen and (max-width: 599px) {
         border-bottom-width: 5px;
@@ -85,11 +86,6 @@
         object-position: center;
         cursor: pointer;
       }
-    }
-
-    strong {
-      font-size: 1em;
-      font-weight: normal;
     }
 
     h3 {

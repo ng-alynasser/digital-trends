@@ -32,6 +32,7 @@
   &__services {
     max-width: 1024px;
     margin: 0 auto;
+    margin-bottom: 20em;
 
     h3 {
       font-size: 4em;
@@ -53,10 +54,17 @@
         position: absolute;
         top: 70px;
         left: -100px;
+        cursor: pointer;
+        outline: 0;
 
         img {
           height: 45%;
           width: 45%;
+
+          &:hover {
+            transform: scale(1.1, 1.1);
+            transition: all 0.3s ease-in;
+          }
         }
       }
 
@@ -95,6 +103,86 @@
           width: 50%;
         }
       }
+
+      .map-5 {
+        position: absolute;
+        top: 340px;
+        left: 90px;
+
+        img {
+          height: 50%;
+          width: 50%;
+        }
+      }
+
+      .map-6 {
+        position: absolute;
+        top: 420px;
+        left: -200px;
+
+        img {
+          height: 50%;
+          width: 50%;
+        }
+      }
+
+      .map-7 {
+        position: absolute;
+        bottom: 5px;
+        left: -35px;
+
+        img {
+          height: 50%;
+          width: 50%;
+          cursor: pointer;
+          outline: 0;
+
+          &:hover {
+            transform: scale(1.1, 1.1);
+            transition: all 0.3s ease-in;
+          }
+        }
+      }
+
+      .map-8 {
+        position: absolute;
+        bottom: 11%;
+        left: 23%;
+        cursor: pointer;
+        outline: 0;
+
+        img {
+          height: 45%;
+          width: 45%;
+
+          &:hover {
+            transform: scale(1.1, 1.1);
+            transition: all 0.3s ease-in;
+          }
+        }
+      }
+
+      .map-9 {
+        position: absolute;
+        bottom: 21%;
+        right: -5%;
+
+        img {
+          height: 45%;
+          width: 45%;
+        }
+      }
+
+      .map-10 {
+        position: absolute;
+        bottom: -10%;
+        right: 10%;
+
+        img {
+          height: 45%;
+          width: 45%;
+        }
+      }
     }
   }
 
@@ -122,6 +210,14 @@
         text-transform: uppercase;
         word-spacing: 0.2em;
         font-size: 7em;
+
+        &:hover {
+          cursor: pointer;
+          transition: all 0.3s ease-in;
+          transform: translateY(-5px);
+          outline: 0;
+          text-shadow: 1px 4px rgba($secondary-color, 0.5);
+        }
 
         span {
           font-weight: 650;

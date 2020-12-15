@@ -23,6 +23,7 @@ import {
   CloudinaryModule,
 } from '@cloudinary/angular-5.x';
 import { Cloudinary } from 'cloudinary-core';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 export function windowFactory(platformId: object): Window | undefined {
   if (isPlatformBrowser(platformId)) {
@@ -50,6 +51,7 @@ export function documentFactory(platformId: object): Document | undefined {
     BrowserAnimationsModule,
     FontAwesomeModule,
     HttpClientModule,
+    ScrollToModule.forRoot(),
     TranslateModule.forRoot(),
     FlexLayoutModule.withConfig({
       ssrObserveBreakpoints: ['xs', 'lt-md'],

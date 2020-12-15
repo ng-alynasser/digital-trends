@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { ScrollService } from '../../services/scroll.service';
+import { StateService } from '../../services/state.service';
 import {
   faWhatsapp,
   faLinkedinIn,
@@ -21,6 +23,26 @@ export class FooterComponent implements OnInit {
   faGoogle = faGoogle;
   faFacebook = faFacebookF;
   faTwitter = faTwitter;
+  @ViewChild('name') nameInput: ElementRef;
 
-  ngOnInit(): void {}
+  constructor(
+    private readonly scrollService: ScrollService,
+    private readonly stateService: StateService
+  ) {}
+
+  ngOnInit(): void {
+    this.stateService
+      .select((state) => state.triggerScrollToContactUs)
+      .subscribe((trigger) => {
+        if (trigger) {
+          this.scrollToContactUs();
+          this.stateService.setState('triggerScrollToContactUs', false);
+        }
+      });
+  }
+
+  scrollToContactUs(): void {
+    this.scrollService.triggerScrollToContactUs();
+    this.nameInput.nativeElement.focus();
+  }
 }

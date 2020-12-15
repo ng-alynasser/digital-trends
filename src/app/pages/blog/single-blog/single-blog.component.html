@@ -23,9 +23,9 @@
     fxLayoutAlign="center center"
     class="single-blog__others"
   >
-    <h3 class="single-blog__others__title">
+    <h4>
       {{ "BLOGS.MORE_ARTICLES" | translate }}
-    </h3>
+    </h4>
     <section
       fxLayout="row wrap"
       fxLayoutAlign="space-between"
@@ -40,10 +40,6 @@
         <figure fxLayout fxLayoutAlign="center center">
           <img [src]="blog?.image" alt="" [routerLink]="['..', blog?.id]" />
         </figure>
-        <strong>
-          {{ blog?.categoryName | translate }} |
-          {{ blog?.date | translate }}
-        </strong>
         <h3>{{ blog?.title | translate }}</h3>
         <p>
           {{ blog?.paragraph | translate }}

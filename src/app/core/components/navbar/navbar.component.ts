@@ -30,4 +30,8 @@ export class NavbarComponent implements OnInit {
   toggleSidebarMobile(): void {
     this.stateService.setState('mobileNavMenuIsOpen', true);
   }
+
+  triggerScrollToContactUs(): void {
+    this.stateService.setState('triggerScrollToContactUs', true);
+  }
 }
