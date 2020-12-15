@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BlogService } from '../blog.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-single-blog',
@@ -18,6 +19,7 @@ export class SingleBlogComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    AOS.init();
     this.route.params.subscribe((params) => {
       const id = +params['id'];
       if (id) {

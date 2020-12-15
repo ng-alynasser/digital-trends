@@ -22,10 +22,20 @@
       padding-bottom: 2em;
     }
 
+    p {
+      animation: fadeInTopLeft;
+      animation-duration: 2.5s;
+    }
+
     span {
       color: $secondary-color;
       font-size: 1.6em;
       margin: 0 0.3em;
+    }
+
+    span:nth-child(2) {
+      font-size: 1em;
+      color: #000;
     }
   }
 
@@ -39,6 +49,8 @@
       border-bottom: 7px solid $secondary-color;
       line-height: 1.2;
       display: inline-block;
+      animation: fadeInUp;
+      animation-duration: 2.5s;
     }
 
     img {

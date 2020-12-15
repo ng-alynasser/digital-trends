@@ -5,6 +5,7 @@ import { ProductDesignComponent } from './product-design.component';
 import { SharedModule } from '../../shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CloudinaryModule } from '@cloudinary/angular-5.x';
+import * as AOS from 'aos';
 
 @NgModule({
   declarations: [ProductDesignComponent],
@@ -15,4 +16,8 @@ import { CloudinaryModule } from '@cloudinary/angular-5.x';
     FlexLayoutModule,
   ],
 })
-export class ProductDesignModule {}
+export class ProductDesignModule {
+  constructor() {
+    AOS.init();
+  }
+}

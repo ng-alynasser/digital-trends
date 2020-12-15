@@ -5,6 +5,7 @@
         [fxFlex]="currentDir === 'rtl' ? 32 : 22"
         [fxFlexOrder]="currentDir === 'rtl' ? 2 : 1"
         [fxFlex.lt-sm]="currentDir === 'rtl' ? 63 : 47"
+        class="animate__animated animate__backInLeft"
       >
         {{ "BLOGS.HEADER" | translate }}
       </h1>
@@ -12,6 +13,7 @@
         fxFlex="32"
         [fxFlexOrder]="currentDir === 'rtl' ? 1 : 2"
         fxHide.lt-md
+        class="animate__animated animate__fadeInRight"
       >
         <cl-image class="image" public-id="header-bg_qqixin.png"> </cl-image>
       </figure>
@@ -36,14 +38,23 @@
             [src]="blog?.image"
             alt=""
             [routerLink]="['/blog', blog?.id]"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           />
         </figure>
 
-        <h3>{{ blog?.title | translate }}</h3>
-        <p>
+        <h3 data-aos="fade-up" data-aos-duration="3000">
+          {{ blog?.title | translate }}
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="3000">
           {{ blog?.paragraph | translate }}
         </p>
-        <button [routerLink]="['/blog', blog?.id]" fxFlexAlign="center">
+        <button
+          [routerLink]="['/blog', blog?.id]"
+          fxFlexAlign="center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           {{ "BLOGS.READ_MORE" | translate }}
         </button>
       </div>

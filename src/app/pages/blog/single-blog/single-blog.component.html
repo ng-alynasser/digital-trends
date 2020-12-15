@@ -8,13 +8,19 @@
   <section class="single-blog__content">
     <h2>{{ blog?.title | translate }}</h2>
     <ng-container *ngFor="let para of blog?.mainContent?.mainParagraphs">
-      <p>{{ para | translate }}</p>
+      <p data-aos="fade-up" data-aos-duration="3000">{{ para | translate }}</p>
     </ng-container>
 
-    <h3>{{ blog?.mainContent?.secondaryTitle | translate }}</h3>
+    <h3 data-aos="fade-up" data-aos-duration="3000">
+      {{ blog?.mainContent?.secondaryTitle | translate }}
+    </h3>
     <ng-container *ngFor="let c of blog?.mainContent?.secondaryContent">
-      <h4 *ngIf="c?.title">- {{ c?.title | translate }}</h4>
-      <p>{{ c?.paragraph | translate }}</p>
+      <h4 *ngIf="c?.title" data-aos="fade-up" data-aos-duration="3000">
+        - {{ c?.title | translate }}
+      </h4>
+      <p data-aos="fade-up" data-aos-duration="3000">
+        {{ c?.paragraph | translate }}
+      </p>
     </ng-container>
   </section>
 
@@ -23,7 +29,7 @@
     fxLayoutAlign="center center"
     class="single-blog__others"
   >
-    <h4>
+    <h4 data-aos="fade-up" data-aos-duration="3000">
       {{ "BLOGS.MORE_ARTICLES" | translate }}
     </h4>
     <section
@@ -37,14 +43,26 @@
         fxLayout="column"
         fxLayoutAlign="space-between"
       >
-        <figure fxLayout fxLayoutAlign="center center">
+        <figure
+          fxLayout
+          fxLayoutAlign="center center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <img [src]="blog?.image" alt="" [routerLink]="['..', blog?.id]" />
         </figure>
-        <h3>{{ blog?.title | translate }}</h3>
-        <p>
+        <h3 data-aos="fade-up" data-aos-duration="3000">
+          {{ blog?.title | translate }}
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="3000">
           {{ blog?.paragraph | translate }}
         </p>
-        <button [routerLink]="['..', blog?.id]" fxFlexAlign="center">
+        <button
+          [routerLink]="['..', blog?.id]"
+          fxFlexAlign="center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           {{ "BLOGS.READ_MORE" | translate }}
         </button>
       </div>

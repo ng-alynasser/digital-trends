@@ -4,6 +4,7 @@ import { Lightbox } from 'ngx-lightbox';
 import { BehaviorSubject } from 'rxjs';
 import { images } from './images';
 import { DirectionService } from '../../core/services/direction.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-work',
@@ -23,6 +24,7 @@ export class WorkComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    AOS.init();
     this.images.forEach((image) => {
       this.albums.push({
         src: image,

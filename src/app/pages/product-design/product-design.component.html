@@ -8,13 +8,18 @@
         fxLayout.lt-sm="column"
         fxLayoutAlign.lt-sm="center center"
       >
-        <h1 fxFlexAlign="start" fxLayout.lt-md="center">
+        <h1
+          fxFlexAlign="start"
+          fxLayout.lt-md="center"
+          class="animate__animated animate__backInLeft"
+        >
           {{ "PRODUCT_DESIGN.HEADER.TITLE" | translate }}
         </h1>
         <ul
           fxLayout="column"
           fxLayoutAlign="center start"
           fxFlexAlign.lt-md="center"
+          class="animate__animated animate__backInUp"
         >
           <li>
             <span>&#x2752;</span>
@@ -26,6 +31,7 @@
         fxFlex="32"
         [fxFlexOrder]="currentDir === 'rtl' ? 1 : 2"
         fxHide.lt-md
+        class="animate__animated animate__fadeInRight"
       >
         <cl-image class="image" public-id="header-bg_qqixin.png"> </cl-image>
       </figure>
@@ -37,11 +43,13 @@
     fxLayout="column"
     fxLayoutAlign="center center"
   >
-    <h3>{{ "PRODUCT_DESIGN.PRODUCT_NAME" | translate }}</h3>
-    <p>
+    <h3 data-aos="fade-up" data-aos-duration="1500">
+      {{ "PRODUCT_DESIGN.PRODUCT_NAME" | translate }}
+    </h3>
+    <p data-aos="fade-up" data-aos-duration="1500">
       {{ "PRODUCT_DESIGN.PRODUCT_DEFINITION" | translate }}
     </p>
-    <figure fxLayout>
+    <figure fxLayout data-aos="fade-up" data-aos-duration="1500">
       <cl-image class="image" public-id="01-min_zyf3k4.png"> </cl-image>
     </figure>
     <div
@@ -50,7 +58,12 @@
       fxLayoutAlign="space-between center"
       fxLayout.lt-sm="column"
     >
-      <figure fxFlex="40" fxFlex.lt-sm="100">
+      <figure
+        fxFlex="40"
+        fxFlex.lt-sm="100"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <cl-image class="image" public-id="02-min_ndl97j.png"> </cl-image>
       </figure>
       <div
@@ -59,8 +72,10 @@
         fxLayoutAlign="space-between start"
         fxLayoutAlign.lt-sm="center center"
       >
-        <h4>{{ "PRODUCT_DESIGN.FIRST_STEP.TITLE" | translate }}</h4>
-        <ul>
+        <h4 data-aos="fade-up" data-aos-duration="1500">
+          {{ "PRODUCT_DESIGN.FIRST_STEP.TITLE" | translate }}
+        </h4>
+        <ul data-aos="fade-up" data-aos-duration="1500">
           <li>
             <span>&#x2752;</span
             ><span>{{
@@ -89,13 +104,29 @@
       </div>
     </div>
     <div fxLayout style="margin-bottom: 0.3em" fxLayout.lt-sm="column">
-      <figure fxLayout fxLayoutAlign="center center">
+      <figure
+        fxLayout
+        fxLayoutAlign="center center"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <cl-image public-id="05-min_gegt6b.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAlign="center center" style="margin: 0 0.3em">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAlign="center center"
+        style="margin: 0 0.3em"
+      >
         <cl-image class="image" public-id="04-min_ougcob.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAlign="center center">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAlign="center center"
+      >
         <cl-image class="image" public-id="03-min_uhkuhx.png"> </cl-image>
       </figure>
     </div>
@@ -111,10 +142,10 @@
         fxLayoutAlign="space-between start"
         fxLayoutAlign.lt-sm="center center"
       >
-        <h4>
+        <h4 data-aos="fade-up" data-aos-duration="1500">
           {{ "PRODUCT_DESIGN.SECOND_STEP.TITLE" | translate }}
         </h4>
-        <ul>
+        <ul data-aos="fade-up" data-aos-duration="1500">
           <li>
             <span>&#x2752;</span
             ><span>{{
@@ -144,29 +175,61 @@
           </li>
         </ul>
       </div>
-      <figure fxFlex="40">
+      <figure data-aos="fade-up" data-aos-duration="1500" fxFlex="40">
         <cl-image class="image" public-id="06-min_gnvnps.png"> </cl-image>
       </figure>
     </div>
     <div fxLayout fxLayout.lt-sm="column" style="margin-bottom: 0.3em">
-      <figure fxLayout fxLayoutAlign="center center">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAlign="center center"
+      >
         <cl-image class="image" public-id="09-min_vzrokg.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAlign="center center" style="margin: 0 0.3em">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAlign="center center"
+        style="margin: 0 0.3em"
+      >
         <cl-image class="image" public-id="08-min_kofvma.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAling="center center">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAling="center center"
+      >
         <cl-image class="image" public-id="07-min_yrugre.png"> </cl-image>
       </figure>
     </div>
     <div fxLayout fxLayout.lt-sm="column" style="margin-bottom: 0.3em">
-      <figure fxLayout fxLayoutAlign="center center">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAlign="center center"
+      >
         <cl-image class="image" public-id="12-min_s5qroe.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAlign="center center" style="margin: 0 0.3em">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAlign="center center"
+        style="margin: 0 0.3em"
+      >
         <cl-image class="image" public-id="11-min_s2jh0j.png"> </cl-image>
       </figure>
-      <figure fxLayout fxLayoutAling="center center">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        fxLayout
+        fxLayoutAling="center center"
+      >
         <cl-image class="image" public-id="10-min_trkrhs.png"> </cl-image>
       </figure>
     </div>
@@ -176,7 +239,7 @@
       fxLayout.lt-sm="column"
       fxLayoutAlign="space-between center"
     >
-      <figure fxFlex="40">
+      <figure data-aos="fade-up" data-aos-duration="1500" fxFlex="40">
         <cl-image class="image" public-id="13-min_n0wd1o.png"> </cl-image>
       </figure>
       <div
@@ -185,8 +248,10 @@
         fxLayoutAlign="space-between start"
         fxLayoutAlign.lt-sm="center center"
       >
-        <h4>{{ "PRODUCT_DESIGN.PRODUCT_SHOW.TITLE" | translate }}</h4>
-        <ul>
+        <h4 data-aos="fade-up" data-aos-duration="1500">
+          {{ "PRODUCT_DESIGN.PRODUCT_SHOW.TITLE" | translate }}
+        </h4>
+        <ul data-aos="fade-up" data-aos-duration="1500">
           <li>
             <span>&#x2752;</span
             ><span
@@ -202,7 +267,13 @@
         </ul>
       </div>
     </div>
-    <div class="product-design__gif" fxLayout fxLayoutAlign="center center">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      class="product-design__gif"
+      fxLayout
+      fxLayoutAlign="center center"
+    >
       <figure fxLayout fxLayoutAlign="center center">
         <img width="75" height="75" src="assets/images/product-design.gif" />
       </figure>
@@ -212,11 +283,17 @@
       fxLayout="column"
       fxLayoutAlign="space-between center"
     >
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="1500">
         <cl-image class="image" public-id="Group_211_ttkzx5.png"> </cl-image>
       </figure>
-      <h4 translate="BRANDING_CARE_TITLE"></h4>
+      <h4
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        translate="BRANDING_CARE_TITLE"
+      ></h4>
       <button
+        data-aos="fade-up"
+        data-aos-duration="1500"
         translate="HOME-CONSULT_CONTACT_US"
         (click)="triggerScrollToContactUs()"
       ></button>

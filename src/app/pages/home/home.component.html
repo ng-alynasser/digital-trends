@@ -1,8 +1,12 @@
 <main class="home">
   <section class="home__header" fxLayout fxLayoutAlign="center center">
-    <p fxFlex="80" fxFlex.lt-sm="100">
+    <p
+      fxFlex="80"
+      fxFlex.lt-sm="100"
+      class="animate__animated animate__fadeInTopLeft"
+    >
       <span [innerHTML]="'HOME-HEADER_FIRST_QUOT' | translate"></span>
-      {{ "HOME-HEADER_TEXT" | translate }}
+      <span>{{ "HOME-HEADER_TEXT" | translate }}</span>
       <span [innerHTML]="'HOME-HEADER_SECOND_QUOT' | translate"></span>
     </p>
   </section>
@@ -12,10 +16,18 @@
     fxLayout="column"
     fxLayoutAlign="center center"
   >
-    <h3>{{ "HOME-OUR_SERVICES" | translate }}</h3>
+    <h3 class="animate__animated animate__fadeInUp">
+      {{ "HOME-OUR_SERVICES" | translate }}
+    </h3>
     <div class="home__services__map" fxLayout fxLayoutAlign="center">
       <figure class="roadmap" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map.png" alt="" />
+        <img
+          src="assets/images/map/map.png"
+          alt=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure
         class="map-1"
@@ -23,22 +35,58 @@
         fxLayoutAlign="center center"
         routerLink="/branding"
       >
-        <img src="assets/images/map/map-1.png" alt="" />
+        <img
+          src="assets/images/map/map-1.png"
+          alt=""
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure class="map-2" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map-2.png" alt="" />
+        <img
+          src="assets/images/map/map-2.png"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure class="map-3" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map-3.png" alt="" />
+        <img
+          src="assets/images/map/map-3.png"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure class="map-4" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map-4.png" alt="" />
+        <img
+          src="assets/images/map/map-4.png"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure class="map-5" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map-5.png" alt="" />
+        <img
+          src="assets/images/map/map-5.png"
+          alt=""
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure class="map-6" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map-6.png" alt="" />
+        <img
+          src="assets/images/map/map-6.png"
+          alt=""
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure
         class="map-7"
@@ -46,7 +94,13 @@
         fxLayoutAlign="center center"
         (click)="triggerScrollToContactUs()"
       >
-        <img src="assets/images/map/map-7.png" alt="" />
+        <img
+          src="assets/images/map/map-7.png"
+          alt=""
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure
         class="map-8"
@@ -54,13 +108,31 @@
         fxLayoutAlign="center center"
         routerLink="/product-design"
       >
-        <img src="assets/images/map/map-8.png" alt="" />
+        <img
+          src="assets/images/map/map-8.png"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure class="map-9" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map-9.png" alt="" />
+        <img
+          src="assets/images/map/map-9.png"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
       <figure class="map-10" fxLayout fxLayoutAlign="center center">
-        <img src="assets/images/map/map-10.png" alt="" />
+        <img
+          src="assets/images/map/map-10.png"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        />
       </figure>
     </div>
   </section>
@@ -73,12 +145,17 @@
       fxLayout.lt-sm="column"
       fxLayoutAlign.lt-sm="center center"
     >
-      <p routerLink="/our-work">
+      <p routerLink="/our-work" data-aos="fade-up" data-aos-duration="3000">
         <span translate="HOME-CHECK_CHECK"></span>
         {{ "HOME-CHECK_OUR_WORK" | translate }}
       </p>
       <div fxFlex="30" fxLayout fxLayoutAlign="space-evenly center">
-        <img src="assets/images/cards.png" alt="Cards Group" />
+        <img
+          src="assets/images/cards.png"
+          alt="Cards Group"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        />
       </div>
     </div>
   </section>
@@ -97,7 +174,12 @@
         fxFlex="45"
         fxFlexOrder.lt-sm="2"
       >
-        <img src="assets/images/consult.png" alt="Consulting" />
+        <img
+          src="assets/images/consult.png"
+          alt="Consulting"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        />
       </div>
       <div
         class="home__consult__text"
@@ -107,8 +189,12 @@
         fxFlexOrder.lt-sm="1"
         fxLayoutAlign="center start"
       >
-        <h3 translate="HOME-CONSULT_TITLE"></h3>
-        <ul>
+        <h3
+          translate="HOME-CONSULT_TITLE"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        ></h3>
+        <ul data-aos="fade-up" data-aos-duration="3000">
           <li translate="HOME-CONSULT_ITEM_ONE"></li>
           <li translate="HOME-CONSULT_ITEM_TWO"></li>
           <li translate="HOME-CONSULT_ITEM_THREE"></li>
@@ -116,6 +202,8 @@
         <button
           translate="HOME-CONSULT_CONTACT_US"
           (click)="triggerScrollToContactUs()"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         ></button>
       </div>
     </div>

@@ -36,6 +36,9 @@
       text-transform: uppercase;
       margin-top: 0.4em;
 
+      animation: backInLeft;
+      animation-duration: 2.5s;
+
       @media screen and (max-width: 599px) {
         line-height: 0.26;
         font-size: 8em;
@@ -46,12 +49,18 @@
       padding: 0;
       margin: 0;
       padding-top: 4em;
+
+      animation: fadeInRight;
+      animation-duration: 2s;
     }
 
     ul {
       font-size: 2em;
       list-style: none;
       padding: 0;
+
+      animation: backInUp;
+      animation-duration: 2.5s;
 
       li {
         line-height: 1.5;

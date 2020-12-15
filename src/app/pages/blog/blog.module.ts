@@ -7,6 +7,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
 import { BlogService } from './blog.service';
+import * as AOS from 'aos';
 
 @NgModule({
   declarations: [BlogComponent, SingleBlogComponent],
@@ -18,4 +19,8 @@ import { BlogService } from './blog.service';
   ],
   providers: [BlogService],
 })
-export class BlogModule {}
+export class BlogModule {
+  constructor() {
+    AOS.init();
+  }
+}

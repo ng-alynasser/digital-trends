@@ -37,6 +37,8 @@
     "@nguniversal/express-engine": "^10.1.0",
     "@ngx-translate/core": "^13.0.0",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "cloudinary-core": "^2.11.3",
     "domino": "^2.1.6",
     "express": "^4.15.2",

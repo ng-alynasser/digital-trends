@@ -37,6 +37,9 @@
       text-transform: uppercase;
       margin-top: 0.4em;
 
+      animation: backInLeft;
+      animation-duration: 2.5s;
+
       @media screen and (max-width: 599px) {
         line-height: 0.26;
       }
@@ -46,6 +49,9 @@
       padding: 0;
       margin: 0;
       padding-top: 4em;
+
+      animation: fadeInRight;
+      animation-duration: 2s;
     }
   }
 

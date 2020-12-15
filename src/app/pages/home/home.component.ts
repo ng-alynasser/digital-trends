@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollService } from '../../core/services/scroll.service';
 import { StateService } from '../../core/services/state.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -40,7 +40,9 @@ export class HomeComponent implements OnInit {
 
   constructor(private readonly stateService: StateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init();
+  }
 
   triggerScrollToContactUs(): void {
     this.stateService.setState('triggerScrollToContactUs', true);
