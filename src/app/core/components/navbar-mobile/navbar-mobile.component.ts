@@ -12,8 +12,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { StateService } from '../../services/state.service';
-import { DTLayoutDirection } from '../../constants';
-import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

@@ -38,6 +38,11 @@ export class I18NService {
 
     if (this.localStorageService.get('uiLanguageCode')) {
       this.translate.use(this.localStorageService.get('uiLanguageCode'));
+      this.document.documentElement.dir =
+        this.localStorageService.get('uiLanguageCode') === 'ar' ? 'rtl' : 'ltr';
+      this.document.documentElement.lang = this.localStorageService.get(
+        'uiLanguageCode'
+      );
     } else {
       this.translate.use('en');
     }
