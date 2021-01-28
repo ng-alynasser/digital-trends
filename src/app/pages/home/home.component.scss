@@ -80,6 +80,8 @@
 
     &__map {
       position: relative;
+      max-width: 1024px;
+      min-width: 1024px;
 
       .map-1 {
         position: absolute;

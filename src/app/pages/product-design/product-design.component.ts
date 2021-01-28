@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DirectionService } from '../../core/services/direction.service';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { StateService } from '../../core/services/state.service';
 
 @Component({
@@ -11,14 +11,20 @@ export class ProductDesignComponent implements OnInit {
   public currentDir = 'rtl';
 
   constructor(
-    private readonly directionService: DirectionService,
+    private readonly translate: TranslateService,
     private readonly stateService: StateService
   ) {}
 
   ngOnInit(): void {
-    this.directionService
-      .onDirectionChange()
-      .subscribe((dir) => (this.currentDir = dir));
+    this.translate.onLangChange.subscribe({
+      next: (event: LangChangeEvent) => {
+        if (event.lang === 'ar') {
+          this.currentDir = 'rtl';
+        } else {
+          this.currentDir = 'ltr';
+        }
+      },
+    });
   }
 
   triggerScrollToContactUs(): void {

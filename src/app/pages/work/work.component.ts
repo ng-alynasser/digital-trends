@@ -3,8 +3,8 @@ import { MediaObserver } from '@angular/flex-layout';
 import { Lightbox } from 'ngx-lightbox';
 import { BehaviorSubject } from 'rxjs';
 import { images } from './images';
-import { DirectionService } from '../../core/services/direction.service';
 import * as AOS from 'aos';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-work',
@@ -20,7 +20,7 @@ export class WorkComponent implements OnInit {
   constructor(
     private readonly lightbox: Lightbox,
     private readonly mediaObserver: MediaObserver,
-    private readonly directionService: DirectionService
+    private readonly translate: TranslateService
   ) {}
 
   ngOnInit(): void {
@@ -41,8 +41,14 @@ export class WorkComponent implements OnInit {
       }
     });
 
-    this.directionService.onDirectionChange().subscribe((direction) => {
-      this.currentDir = direction;
+    this.translate.onLangChange.subscribe({
+      next: (event: LangChangeEvent) => {
+        if (event.lang === 'ar') {
+          this.currentDir = 'rtl';
+        } else {
+          this.currentDir = 'ltr';
+        }
+      },
     });
   }
 

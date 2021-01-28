@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslationLoaderService } from './core/services/translation-loader.service';
 import { StateService } from './core/services/state.service';
 import { merge, Observable } from 'rxjs';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { filter, map, switchMap } from 'rxjs/operators';
 import { Title } from '@angular/platform-browser';
+import { I18NService } from './core/services/i18n.service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   navMenuVisible$: Observable<boolean>;
 
   constructor(
-    private translationLoaderService: TranslationLoaderService,
+    private readonly i18nService: I18NService,
     private readonly stateService: StateService,
     private readonly router: Router,
     private readonly translationService: TranslateService,
@@ -25,7 +25,28 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.translationLoaderService.loadTranslation();
+    this.i18nService.init(
+      {
+        code: 'en',
+        name: 'English',
+        culture: 'en-US',
+        dir: 'ltr',
+      },
+      [
+        {
+          code: 'en',
+          name: 'English',
+          culture: 'en-US',
+          dir: 'ltr',
+        },
+        {
+          code: 'ar',
+          name: 'العربية',
+          culture: 'ar-EG',
+          dir: 'rtl',
+        },
+      ]
+    );
     this.navMenuVisible$ = this.stateService.select(
       (state) => state.mobileNavMenuIsOpen
     );

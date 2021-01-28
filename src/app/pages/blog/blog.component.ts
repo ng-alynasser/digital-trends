@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { DirectionService } from '../../core/services/direction.service';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { BlogService } from './blog.service';
 
 @Component({
@@ -20,13 +19,19 @@ export class BlogComponent implements OnInit {
   }[];
 
   constructor(
-    private readonly directionService: DirectionService,
-    private readonly blogService: BlogService
+    private readonly blogService: BlogService,
+    private readonly translate: TranslateService
   ) {}
 
   ngOnInit(): void {
-    this.directionService.onDirectionChange().subscribe((dir) => {
-      this.currentDir = dir;
+    this.translate.onLangChange.subscribe({
+      next: (event: LangChangeEvent) => {
+        if (event.lang === 'ar') {
+          this.currentDir = 'rtl';
+        } else {
+          this.currentDir = 'ltr';
+        }
+      },
     });
 
     this.blogs = this.blogService.getBlogs();

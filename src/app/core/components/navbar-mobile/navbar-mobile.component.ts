@@ -12,9 +12,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { StateService } from '../../services/state.service';
-import { DirectionService } from '../../services/direction.service';
 import { DTLayoutDirection } from '../../constants';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar-mobile',
@@ -34,14 +34,15 @@ export class NavbarMobileComponent {
 
   constructor(
     private readonly stateService: StateService,
-    private readonly directionService: DirectionService,
-    private readonly router: Router
+    private readonly translate: TranslateService
   ) {}
 
   toggleLanguage(): void {
-    this.directionService.isRtl()
-      ? this.directionService.setDirection(DTLayoutDirection.LTR)
-      : this.directionService.setDirection(DTLayoutDirection.RTL);
+    if (this.translate.currentLang === 'en') {
+      this.translate.use('ar');
+    } else {
+      this.translate.use('en');
+    }
   }
 
   close(): void {
