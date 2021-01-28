@@ -309,13 +309,23 @@
     max-width: 1024px;
     margin: 0 auto;
     padding-bottom: 4em;
+    text-align: center;
 
     h3 {
-      text-align: center;
       font-size: 4em;
       border-bottom: 7px solid $secondary-color;
       line-height: 1.2;
       display: inline-block;
+    }
+
+    .carousel-card {
+      padding: 1em;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 }

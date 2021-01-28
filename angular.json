@@ -31,7 +31,7 @@
               "node_modules/animate.css/animate.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "allowedCommonJsDependencies": ["cloudinary-core", "ngx-lightbox"]
           },
           "configurations": {
             "production": {

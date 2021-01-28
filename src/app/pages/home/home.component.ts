@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StateService } from '../../core/services/state.service';
 import * as AOS from 'aos';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home',
@@ -37,6 +38,34 @@ export class HomeComponent implements OnInit {
     'assets/images/clients/ventoraProject.png',
     'assets/images/clients/waha waves.png',
   ];
+
+  customOptions: OwlOptions = {
+    loop: true,
+    dots: true,
+    dotsData: true,
+    navSpeed: 700,
+    autoplay: true,
+    // autoHeight: true,
+    // autoWidth: true,
+    animateIn: 'animate__animated  animate__fadeIn animate__slower',
+    responsive: {
+      0: {
+        items: 2,
+      },
+      400: {
+        items: 3,
+      },
+      740: {
+        items: 5,
+      },
+      940: {
+        items: 6,
+      },
+      1500: {
+        items: 7,
+      },
+    },
+  };
 
   constructor(private readonly stateService: StateService) {}
 

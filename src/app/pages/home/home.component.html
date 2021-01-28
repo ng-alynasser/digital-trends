@@ -209,11 +209,14 @@
     </div>
   </section>
 
-  <section
-    class="home__clients"
-    fxLayout="column"
-    fxLayoutAlign="center center"
-  >
+  <section class="home__clients">
     <h3 translate="HOME-CLIENTS_OUR_CLIENTS"></h3>
+    <owl-carousel-o [options]="customOptions">
+      <<ng-template *ngFor="let image of images" carouselSlide>
+        <div class="carousel-card">
+          <img [src]="image" alt="" />
+        </div>
+      </ng-template>
+    </owl-carousel-o>
   </section>
 </main>
