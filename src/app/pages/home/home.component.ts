@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StateService } from '../../core/services/state.service';
 import * as AOS from 'aos';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,8 @@ export class HomeComponent implements OnInit {
     'https://res.cloudinary.com/alynasser/image/upload/c_scale,w_100/v1607798321/THE_ROOFS-min_wbkpqs.png',
     'https://res.cloudinary.com/alynasser/image/upload/c_scale,w_100/v1607798320/ddksa-min_bvvlhd.png',
   ];
+
+  faDownload = faFileDownload;
 
   images = [
     'assets/images/clients/AhmedSaif.png',

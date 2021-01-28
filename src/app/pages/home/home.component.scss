@@ -1,8 +1,27 @@
 @import "./src/styles.scss";
 
 .home {
+  position: relative;
   @media screen and (max-width: 599px) {
     font-size: 8.5px;
+  }
+
+  .download-button {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: $main-color;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    font-size: 30px;
   }
 
   &__header {

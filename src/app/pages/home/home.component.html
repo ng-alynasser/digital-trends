@@ -219,4 +219,14 @@
       </ng-template>
     </owl-carousel-o>
   </section>
+
+  <div class="download-button" (click)="pdfInput.click()" title="Download PDF">
+    <fa-icon [icon]="faDownload"></fa-icon>
+    <a
+      style="display: none"
+      href="assets/pdf/identity.pdf"
+      #pdfInput
+      download
+    ></a>
+  </div>
 </main>
