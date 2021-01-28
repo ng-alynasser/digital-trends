@@ -45,8 +45,7 @@ export class HomeComponent implements OnInit {
     dotsData: true,
     navSpeed: 700,
     autoplay: true,
-    // autoHeight: true,
-    // autoWidth: true,
+    rtl: true,
     animateIn: 'animate__animated  animate__fadeIn animate__slower',
     responsive: {
       0: {

@@ -83,6 +83,9 @@
 
     p {
       margin-bottom: 0;
+      &:hover {
+        color: $secondary-color;
+      }
     }
 
     fa-icon {
