@@ -14,7 +14,7 @@ import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 export class WorkComponent implements OnInit {
   public readonly images = images;
   private readonly albums = [];
-  public currentDir = 'rtl';
+  public currentDir: string;
   isResponsive$ = new BehaviorSubject<boolean>(null);
 
   constructor(
@@ -25,6 +25,9 @@ export class WorkComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
+
+    this.currentDir = this.translate.currentLang === 'ar' ? 'rtl' : 'ltr';
+
     this.images.forEach((image) => {
       this.albums.push({
         src: image,

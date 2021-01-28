@@ -8,7 +8,7 @@ import { StateService } from '../../core/services/state.service';
   styleUrls: ['./branding.component.scss'],
 })
 export class BrandingComponent implements OnInit {
-  public currentDir = 'rtl';
+  public currentDir: string;
 
   constructor(
     private readonly translate: TranslateService,
@@ -16,6 +16,7 @@ export class BrandingComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.currentDir = this.translate.currentLang === 'ar' ? 'rtl' : 'ltr';
     this.translate.onLangChange.subscribe({
       next: (event: LangChangeEvent) => {
         if (event.lang === 'ar') {

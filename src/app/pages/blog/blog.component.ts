@@ -8,7 +8,7 @@ import { BlogService } from './blog.service';
   styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent implements OnInit {
-  public currentDir = 'rtl';
+  public currentDir: string;
   public blogs: {
     categoryName: string;
     id: number;
@@ -24,6 +24,8 @@ export class BlogComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.currentDir = this.translate.currentLang === 'ar' ? 'rtl' : 'ltr';
+
     this.translate.onLangChange.subscribe({
       next: (event: LangChangeEvent) => {
         if (event.lang === 'ar') {
